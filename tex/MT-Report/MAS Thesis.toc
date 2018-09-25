@@ -1,0 +1,28 @@
+\contentsline {chapter}{ABSTRACT}{v}{chapter*.1}
+\contentsline {chapter}{NOTATIONS AND ACRONYMS}{vii}{chapter*.2}
+\contentsline {chapter}{ACKNOWLEDGMENTS}{ix}{chapter*.3}
+\contentsline {chapter}{\numberline {1.}INTRODUCTION}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2.}STATE OF THE ART}{9}{chapter.2}
+\contentsline {chapter}{\numberline {3.}APPROACH}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Description of the hardware platform}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Description of the software platform}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Semantics for rigid-body algorithms}{25}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Three-link manipulator semantics and overview}{27}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Orocos KDL's geometrical relation semantics}{29}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Featherstone's geometrical relation semantics}{34}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Inertial parameter estimation}{35}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Excitation trajectories}{35}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Model-based controller for a non-linear system}{37}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Dynamic model based on Orocos KDL}{38}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Computed-torque control}{42}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Trajectory generation}{46}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4.}EXPERIMENTAL RESULTS}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Model-based controller}{49}{section.4.1}
+\contentsline {section}{\numberline {4.2}Inertial parameter estimation}{55}{section.4.2}
+\contentsline {chapter}{\numberline {5.}CONCLUSIONS AND FUTURE WORK}{57}{chapter.5}
+\contentsline {chapter}{BIBLIOGRAPHY}{61}{chapter*.38}
+\parindent 0pt\vskip 12pt APPENDICES
+\contentsline {chapter}{\numberline {A.}YouBot driver}{65}{appendix.A}
+\contentsline {chapter}{\numberline {B.}Orocos KDL}{66}{appendix.B}
+\contentsline {chapter}{\numberline {C.}Simbody}{67}{appendix.C}
+\contentsline {chapter}{\numberline {D.}Tuning of the controller gains}{69}{appendix.D}

@@ -1,0 +1,924 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{PROBLEM STATEMENT} -- not always required the chapter name as problem statement.	%
+% chapter problem statement - in this chapter the problem of the thesis are desribed.				%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{APPROACH}
+\label{sec:approach}
+
+This chapter discusses the detailed information about the approaches used in this work. At first, the basic approach depicted in Fig.~\ref{fig:basicapproach} is an advanced model based controller which gives the complete overview about all the components used in this work.
+
+\begin{center}
+\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+    \node [input, name=input] {};
+    \node [sum, right of=input, node distance=1.5cm] (minus) {\textbf{-}};
+    \node [block, right of=minus, node distance=2.1cm] (control) {\textbf{Controller}};
+    \node [block, right of=control, node distance=3.5cm, pin={[pinstyle]above: $\psi$}] (model){\textbf{\shortstack{Dynamic\\ model}}};
+    \node [sum, right of=model, node distance=2.5cm](summation) {\textbf{$\epsilon$}};
+    \node [block, right of=summation,
+            node distance=2.5cm] (robot) {\textbf{Robot}};
+    \node [block, above of=robot, node distance=2cm](friction) {\textbf{\shortstack{Friction\\ observer}}};
+	\node [output, right of=robot, node distance=2.9cm](output){};
+	\draw [->,thick] (input) -- node {$q_d, \dot{q}_d$} (minus);
+	\draw [->,thick] (minus) -- node {$e$} (control);
+	\draw [->,thick] (control) -- node {$\ddot{q}_d$} (model);	
+    \draw [->,thick] (model) -- node {$\tau$} (summation);
+    \draw [->,thick] (summation) -- node {$\tau_m$} (robot);    
+	\draw [->,thick] (friction) -- ++ (-2.0, 0) -| node [pos=-0.1] {$\tau_f$} (summation);	
+    \draw [->,thick] (robot) -- node[pos=0.5] {$q_m, \dot{q}_m$} (output);
+	\draw [->,thick] (output) -- ++ (0,-1.3) |- node [pos=0.7] {$\dot{q}_m$} (friction);
+	\draw [->,thick] (output) -- ++ (0,-1.3) -| node [] {} (minus);
+	\draw [->,thick] (output) -- ++ (0,-1.3) -| node [] {} (model);
+\end{tikzpicture}
+\captionof{figure}{Basic approach}
+\label{fig:basicapproach}
+\end{center}
+
+The control scheme given above~\ref{fig:basicapproach} feeds the control variable as an acceleration $\ddot{q}_d$ input to the dynamic model for computing the model torques, whereas Chung et. al.~\cite{Chung2016} fed the actual desired acceleration $\ddot{q}_d$ as the model input in the defined control scheme. The reason for this difference in the controller scheme is that there is no accelerometer present in the manipulator joints. In such a case, it is only fair to answer the following question, why not differentiating the measured velocity to get the acceleration data?. The answer to the above question is that the measured velocity which is obtained from the encoders are generally noisy and taking the derivative of this data would amplify the noise much further, so the desired acceleration input is not considered in this work. An another important observation in this work is that the model considers only the link's moment of inertia and it can be subtracted from the motor's moment of inertia. The motor's moments of inertia can be computed with the specifications provided by the manufacturers. So, the alternate method is selected in this work for the model-based control as depicted in Fig.~\ref{fig:alternateapproach}. 
+
+\begin{center}
+\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+    \node [input, name=input] {};
+    \node [input, above of=input, name=input1, node distance=1.5cm] {};
+    \node [sum, right of=input, node distance=1.5cm] (minus) {\textbf{-}};
+    \node [block, right of=minus, node distance=2.1cm] (control) {\textbf{Controller}};
+    \node [block, above of=control, node distance=1.5cm, pin={[pinstyle]above: $\psi$}] (model){\textbf{\shortstack{Dynamic\\ model}}};
+    \node [sum, right of=control, node distance=2.5cm](summation) {\textbf{$\epsilon$}};
+    \node [block, right of=summation,
+            node distance=2.5cm] (robot) {\textbf{Robot}};
+	\node [output, right of=robot, node distance=2.9cm](output){};
+	\draw [->,thick] (input) -- node {$q_d, \dot{q}_d$} (minus);
+	\draw [->,thick] (input1) -- node {$\ddot{q}_d=0$} (model);
+	\draw [->,thick] (minus) -- node {$e$} (control);
+	\draw [->,thick] (control) -- node {$\tau_c$} (summation);	
+    \draw [->,thick] (model) -| node {$\tau_{model}$} (summation);
+    \draw [->,thick] (summation) -- node {$\tau_m$} (robot);    
+    \draw [->,thick] (robot) -- node[pos=0.5] {$q_m, \dot{q}_m$} (output);
+	\draw [->,thick] (output) -- ++ (0,-1.3) -| node [] {} (minus);
+	\draw [->,thick] (output) -- ++ (0, 3.3) -| node [] {} (input1);
+\end{tikzpicture}
+\captionof{figure}{Alternative method - Computed torque-control which includes dynamic model}
+\label{fig:alternateapproach}
+\end{center}
+
+The following components are really important to reach the ultimate goal of this project that is specified in Fig.~\ref{fig:alternateapproach}.
+
+\begin{itemize}
+\item \textbf{Robot/Process/Plant} represents the real system and it contains an actuator through which the process is controlled. The system that is used in this work is explained in detail in the preceding section. The disturbance in the system is the non-controlled variable that has an influence on the controller performance but the controller adjusts the control variable for compensating that influence. 
+\item \textbf{Dynamic model} is required to generate the model torques based on Orocos KDL ID solver~\cite{smits2011kdl} and the manufacturer's 3D model~\cite{kukamanipulator} where $\psi$ represents the dynamic model parameters which can be replaced with the identified parameters once the estimation is successful. The friction compensation term $\tau_f$ is also considered in this work with the basic approach.
+\item \textbf{Parameter estimation} that estimates the accurate model parameters. $\psi$ represents the dynamic model parameters. The excitation trajectories can be identified using the Finite Fourier series~\cite{SweversJ1997Orea} and the coefficients can be optimized for better identifying the model parameters. This section presents an overview about the parameter estimation and the trajectory parameterization and optimization.
+\item \textbf{Controller} solves the control problem where it reduces the error by introducing the regulation in the system with the linear feedback control method. This work uses the cascade control mechanism and velocity of the joint is controlled in velocity PI controller. 
+\end{itemize}
+
+\newpage
+\section{Description of the hardware platform}
+
+This work uses the KUKA youBot for the implementation of the identification, control modules it comprises omnidirectional mobile platform and the manipulator. 
+
+\subsection*{YouBot omnidirectional platform}
+
+The base of the robot has 4 omnidirectional wheels with the separate motors attached to each of the wheel joints. It is particularly useful in testing the controller before performing the test in the manipulator where the joint limits are applicable. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=60mm, trim=0 50 0 20]{pictures/youbot.jpg}
+\caption[base]{youBot platform and manipulator}
+\end{figure}
+
+\subsection*{YouBot manipulator}
+
+The main focus of this work is to achieve the computed-torque control in the youBot manipulator. The youBot arm consists of five rotary joints with 5-DoF controlled by the individual motors and it includes gripper in the last link which has two fingers. But this work does not consider the gripper both in modelling and the torque computation. The manipulator joints are commanded with the position or velocity or torque inputs through EtherCAT which has a real-time capability. The 3-D model of the manipulator is provided by the manufacturer~\cite{kukamanipulator} and it is used for modelling purposes and it is also used in computed-torque control where the model torques are computed. In order to increase the tracking performance, the gain values are tuned to a high value where there is a possibility of the overshoot problem. Due to this, the joint might cross the limits provided by the manufacturers hence it is important to introduce an artificial position limits to the joints for avoiding any damages to the system. The introduction of the limiting features and the safety controller is explained in the proceeding sections. Since the joints are commanded in torque mode, it is necessary to verify the maximum applicable torque for the individual joints of the manipulator. By considering the specifications provided by the manufacturers, the maximum applicable joint torques were identified with the following equation~\eqref{eq:maximumtorque}
+
+\begin{equation}
+\tau_{max} = \tau_{nominal} \cdot gear\_reduction\_ratio
+\label{eq:maximumtorque}
+\end{equation}
+
+where nominal torque is represented in N.m., and gearbox reduction ratio values are referred from youBot-store's detailed specifications\footnote{\url{http://www.youbot-store.com/wiki/index.php/YouBot_Detailed_Specifications}}. The computed maximum joint torques are listed in the following table 3.1
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multirow{2}{*}{\textbf{3-D Model}} & \textbf{Joint1} & \textbf{Joint2} & \textbf{Joint 3} & \textbf{Joint 4} & \multicolumn{1}{c|}{\textbf{Joint5}} \\ \cline{2-6} 
+                                    & \multicolumn{5}{c|}{\textbf{In Newton meters (N.m.)}}                                                           \\ \hline
+Existing $\tau_{max}$                     & 9.500           & 9.500           & 6.000            & 2.000            & 1.000                                \\ \hline
+New $\tau_{max}$                      & 12.901          & 12.901          & 8.270            & 4.175            & 1.755                                \\ \hline
+\end{tabular}
+\caption{The maximum applicable joint torques provided by the manufacturers and it is computed from the equation~\eqref{eq:maximumtorque}}
+\end{table}
+
+The youBot-store specifications does not clearly state the nominal torque of the joint 5 hence the motor details are referred from~\cite{corberan2012haptic} which has the specifications of 15Watt brushless Maxon EC32 flat motor with the Hal sensor number 267121\footnote{\url{https://www.maxonmotor.com/medias/sys_master/root/8825434800158/17-EN-262.pdf}}.
+
+\newpage
+\section{Description of the software platform}
+
+This section briefly discusses the software and libraries used in this work such as the youBot driver~\cite{youbotdriver}, Orocos KDL~\cite{smits2011kdl} and Simbody~\cite{sherman2011simbody}. All the software used in this work is developed in Ubuntu 14.04 operating system.
+
+\subsection*{YouBot driver}
+
+The youBot base and manipulator can be controlled via youBot-driver~\cite{youbotdriver} and the cmake version of the driver is used in this work. The communication with the robotic joints can be established via EtherCAT master~\cite{youbotdriver} which runs in a frequency of 1KHz (1 ms) hence a delay of 1 ms is introduced in computed-torque controller that is implemented in this work. The youBot-driver's architecture overview is given in Fig.~\ref{fig:youbotdriverarchitecture}. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=60mm, trim=0 0 0 0]{pictures/youbotdriver_architecture}
+\caption{youBot driver architecture overview and the image is taken from~\cite{youbotdriver_architecture}}
+\label{fig:youbotdriverarchitecture}
+\end{figure}
+
+\subsection*{Simbody}
+
+Simbody\footnote{\url{https://simbody.github.io/simbody-3.6-doxygen/api/index.html}}~\cite{sherman2011simbody} is the simulation engine that is used in this work to simulate and visualize youBot manipulator. Simbody follows recursive equations of motion similar to Featherstone~\cite{featherstone2014rigid} for the n joint DoF. It is a part of the simulation toolkit named SimTK which is an interface that gives access to the physics based simulation features. It is possible to perform the internal coordinate simulations of the multi-body systems by using Simbody API\footnote{\url{https://simtk.org/docman/?group_id=47}}. The multi-body system can be seen as the combination of rigid bodies that are connected through joints. Semantics of a rigid-body is given in Fig.~\ref{fig:simbody_rigidbody}. Simbody comprises two important classes which are related to the multi-body system such as system and state. The system class provides access to the logic for simulation which is constant and the state information stores the data overtime. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=80mm, trim=0 200 0 200]{pictures/simbody_rigidbody}
+\caption{Rigid body semantics in SimTK}
+\label{fig:simbody_rigidbody}
+\end{figure}
+
+In Simbody, MobilizedBody represents the basic body and joint object which is added to the multibody tree. The MobilizedBody connects the child to the existing parent body which is assumed to be ground with the use of the mobilizer and also assigns the reference frame to the parent body. The mobilizer has two frames attached with it such as the fixed frame F is attached to the parent body which is the reference to account the motion of the moving frame M of the child body respectively. The Pin joint is used in this work as manipulator joints are revolute joints where the axis of rotation is possible around only one axis. The above figure describes the mobility of the child body ($body_{i}$) with respect to the reference $body_{i-1}$ with the use of the coordinate frames. Simbody considers that the parent ($body_{i-1}$) is attached to the ground and the $body_i$ is the child body that does all the motions. The root frames of the rigid bodies i-1 and i are represented as $root_{i-1}, root_i$ respectively. The transformation from the body i to body i-1 can be given as
+
+\begin{equation}
+^{root_{i-1}}T_{root_i} = ^{root_{i-1}}T_{F_{i-1}}\cdot ^{F_{i-1}}T_{M_i}\cdot ^{M_i}T_{root_i}
+\end{equation}
+
+The mobilizer transformation from $M_i$ to $F_{i-1}$ mainly depends on the joint's coordinate $^{F_i}T_{M_i}$ which helps to locate the relative pose of the coordinate frame M with respect to the frame F. The other two segment transforms of both the parent and child body are composed with the mobilizer transform gives us the relative pose of the child body with respect to its parent. 
+
+Before getting into further details, the following changes are made in the construction of the youBot manipulator in the visualizer. The pose of the CoM vector is represented w.r.t. the body's reference frame and the moments of inertia is in the principle axis. It is very clear from the Fig.~\ref{fig:simbody_rigidbody} that the inertial frame is represented with respect to the body's reference frame. But the kinematic chain for the 3-D model has a convention that the body's reference frame is coinciding with the joint reference frame. Hence, the second transformation in the joint description is an identity. In order to adapt to the convention used by Simbody, the inertial frame has to be re-expressed and shifted. Simbody provide sufficient methods to re-express and shift the inertia and the implementation details are discussed in appendix~\ref{sec:appendixC}. Torque sensor is built in Simbody for getting the torques from the manipulator joints, it gives the way to get the external forces such as bias, gravity forces and the mapping of the Cartesian forces into joint torque by using inverse Jacobian. Since the same 3-D model is used in Orocos-KDL, the offset computation is carried out to match the input joint positions with respect to the model. The joint positions are then fed to the Simbody where the inverse of the KDL offset computation is fed to Simbody since the same model is used and it takes raw youBot configuration as an input. Note that the result of the Simbody joint position measurements are inverted back to youBot's raw data since the joint position feedback is given back to KDL based ID solver. The Simbody's convention is semantically mismatching with KDL based ID solver in the implementation. The mismatch is observed when applying model torques that are computed using KDL to the manipulator joints in Simbody for the purpose of gravity compensation task. The result of this task is that the gravity compensation terms in youBot manipulator joints are accounted but the joints are slowly drifting away from the candle configuration overtime in further iterations of the visualizer. 
+
+\newpage
+\subsection*{Orocos KDL}
+
+An important requirement for the model-based controller is to have a mathematical model that can predict the torque which is close-enough to the real system. A model comprises the physical properties of the robot such as kinematic, geometric and dynamic properties which are particularly useful in computing the model torques based on the given trajectory information. For this purpose, an open source library called Orocos KDL~\cite{smits2011kdl} is selected with an intend of modelling, computing the kinematic chain and predict torques using the recursive Newton-Euler ID (Inverse Dynamics) solver. The kinematic chain of the robot comprises segments of the manipulator itself and each segment has both the link and the joints attached between the links. The joint axis is negative for the joint number 5 hence the torque and velocity of the joint 5 has be inverted before commanding the model torques to the real robot.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=75mm, trim=0 0 0 0]{pictures/kdlchain_classdiagram}
+\caption{Kinematic chain in Orocos KDL which is a combination of both the joint and link}
+\label{fig:kdlchain}
+\end{figure}
+
+The kinematic chain (KDL::Chain) of the robot is the collection of segments (KDL::Segment $0\cdot \cdot \cdot total number of segments$) where the segment is the combination of the link and joint (KDL::Joint) properties as depicted in Fig.~\ref{fig:kdlchain}. The implementation details are discussed briefly in appendix~\hyperref[sec:appendixB]{B}. 
+
+\begin{center}
+\begin{tikzpicture}[scale =1.8, tdplot_main_coords, -stealth]
+\tdplotsetrotatedcoords{0}{0}{170}
+\draw[red] (0,0,0) -- (1,0,0) node[anchor=north east]{$x$};
+\draw[blue] (0,0,0) -- (0,1,0) node[anchor=north west]{$y$};
+\draw[black] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};
+\coordinate (Shift) at (0,0,2.5);
+\tdplotsetrotatedcoordsorigin{(Shift)}
+\node [label={[xshift=5.0cm,yshift=0.5cm]base}]{};
+\node [label={[xshift=5.0cm,yshift=3.4cm]Joint 1}]{};
+\node [label={[xshift=5.0cm,yshift=6.9cm]Joint 2}]{};
+\node [label={[xshift=5.0cm,yshift=10.5cm]Joint 3}]{};
+\node [label={[xshift=5.0cm,yshift=14cm]Joint 4}]{};
+\node [label={[xshift=5.0cm,yshift=17cm]Joint 5}]{};
+\tdplotdrawarc[->,color=black]{(-0.75,2.1,0)}{0.1}{160}{330}{anchor=south east,color=black}{}
+\coordinate (Origin) at (0,0);
+
+\draw[thin, dashed] [->] (Origin)  arc (3.2:36.9:11.8) node [right,pos=1.5] {};
+\tdplotsetrotatedcoords{-90}{-180}{90}
+\draw[color=red,tdplot_rotated_coords,->] (0,0,0)
+-- (1,0,0) node[anchor=south east]{$x$};
+\draw[color=blue,tdplot_rotated_coords,->] (0,0,0)
+-- (0,1,0) node[anchor=west]{$y$};
+\draw[color=black,tdplot_rotated_coords,->] (0,0,0)
+-- (0,0,1) node[anchor=south]{$z$};
+\node [label={[xshift=2.4cm,yshift=2.3cm]\tiny\tiny \textbf{Relative Pose}}]{};
+\node [label={[xshift=2.7cm,yshift=2cm]\tiny\tiny(X Y Z = 0.024m 0m 0.115m)}]{};
+\node [label={[xshift=2.27cm,yshift=1.7cm]\tiny\tiny(Z Y X = 0$^{\circ}$ 0$^{\circ}$ 180$^{\circ}$)}]{};\tdplotdrawarc[->,color=black]{(-0.78,2.1,1)}{0.1}{90}{-90}{anchor=south east,color=black}{}
+
+\coordinate (Shift) at (0,0,4);
+\tdplotsetrotatedcoordsorigin{(Shift)}
+\tdplotsetrotatedcoords{-90}{-90}{0}
+
+\draw[thin, dashed] [->] (Origin)+(-2.35,6.45)  arc (3.2:36.9:7.1) node [right,pos=0.5] {};
+
+\draw[color=red,tdplot_rotated_coords,->] (0,0,0)
+-- (1,0,0) node[anchor=south east]{$x$};
+\draw[color=blue,tdplot_rotated_coords,->] (0,0,0)
+-- (0,1,0) node[anchor=west]{$y$};
+\draw[color=black,tdplot_rotated_coords,->] (0,0,0)
+-- (0,0,1) node[anchor=south]{$z$};
+\node [label={[xshift=2.3cm,yshift=5.3cm]\tiny\tiny \textbf{Relative Pose}}]{};
+\node [label={[xshift=2.45cm,yshift=5cm]\tiny\tiny(X Y Z = 0.033m 0.0m 0.0m)}]{};
+\node [label={[xshift=2.12cm,yshift=4.7cm]\tiny(Z Y X = -90$^{\circ}$ 0$^{\circ}$ 90$^{\circ}$)}]{};
+\tdplotdrawarc[->,color=black]{(-0.08,0.9,3.9)}{0.1}{-240}{80}{anchor=south west,color=black}{}
+
+\coordinate (Shift) at (0,0,6);
+\tdplotsetrotatedcoordsorigin{(Shift)}
+\tdplotsetrotatedcoords{-90}{-90}{-90}
+\draw[thin, dashed] [->] (Origin)+(-3.8,10.6)  arc (4.1:36.9:9.2) node [right,pos=0.5] {};
+\draw[color=red,tdplot_rotated_coords,->] (0,0,0)
+-- (1,0,0) node[anchor=south east]{$x$};
+\draw[color=blue,tdplot_rotated_coords,->] (0,0,0)
+-- (0,1,0) node[anchor=west]{$y$};
+\draw[color=black,tdplot_rotated_coords,->] (0,0,0)
+-- (0,0,1) node[anchor=south]{$z$};
+\node [label={[xshift=2.3cm,yshift=8.5cm]\tiny\tiny \textbf{Relative Pose}}]{};
+\node [label={[xshift=2.5cm,yshift=8.2cm]\tiny\tiny(X Y Z = 0.155m 0.0m 0.0m)}]{};
+\node [label={[xshift=2.1cm,yshift=7.9cm]\tiny(Z Y X = -90$^{\circ}$ 0$^{\circ}$ 0$^{\circ}$)}]{};
+\tdplotdrawarc[->,color=black]{(-0.08,0.9,5.9)}{0.1}{240}{-90}{anchor=south west,color=black}{}
+
+\coordinate (Shift) at (0,0,8);
+\tdplotsetrotatedcoordsorigin{(Shift)}
+\tdplotsetrotatedcoords{-90}{-90}{-90}
+\draw[thin, dashed] [->] (Origin)+(-5.65,15.6)  arc (4.2:36.4:9.75) node [right,pos=0.5] {};
+\draw[color=red,tdplot_rotated_coords,->] (0,0,0)
+-- (1,0,0) node[anchor=south east]{$x$};
+\draw[color=blue,tdplot_rotated_coords,->] (0,0,0)
+-- (0,1,0) node[anchor=west]{$y$};
+\draw[color=black,tdplot_rotated_coords,->] (0,0,0)
+-- (0,0,1) node[anchor=south]{$z$};
+\node [label={[xshift=2.4cm,yshift=12cm]\tiny\tiny \textbf{Relative Pose}}]{};
+\node [label={[xshift=2.5cm,yshift=11.7cm]\tiny\tiny(X Y Z = 0.0m 0.135m 0.0m)}]{};
+\node [label={[xshift=1.97cm,yshift=11.4cm]\tiny(Z Y X = 0$^{\circ}$ 0$^{\circ}$ 0$^{\circ}$)}]{};
+\tdplotdrawarc[->,color=black]{(-0.08,0.9,7.9)}{0.1}{-240}{80}{anchor=south west,color=black}{}
+
+\coordinate (Shift) at (0,0,10);
+\tdplotsetrotatedcoordsorigin{(Shift)}
+\tdplotsetrotatedcoords{-90}{0}{-90}
+\draw[thin, dashed] [->] (Origin)+(-7.55,21)  arc (4.8:37.1:9.3) node [right,pos=0.5] {};
+\draw[color=red,tdplot_rotated_coords,->] (0,0,0)
+-- (1,0,0) node[anchor=south east]{$x$};
+\draw[color=blue,tdplot_rotated_coords,->] (0,0,0)
+-- (0,1,0) node[anchor=west]{$y$};
+\draw[color=black,tdplot_rotated_coords,->] (0,0,0)
+-- (0,0,1) node[anchor=south]{$z$};
+\node [label={[xshift=2.45cm,yshift=15.5cm]\tiny\tiny \textbf{Relative Pose}}]{};
+\node [label={[xshift=2.55cm,yshift=15.2cm]\tiny\tiny(X Y Z = 0.0m 0.1136m 0.0m)}]{};
+\node [label={[xshift=2.1cm,yshift=14.9cm]\tiny(Z Y X = 0$^{\circ}$ 0$^{\circ}$ -90$^{\circ}$)}]{};
+\tdplotdrawarc[->,color=black]{(-0.5,1.5,10.1)}{0.1}{0}{280}{anchor=south west,color=black}{}
+\end{tikzpicture}
+\captionof{figure}{Frame representation of the youBot-store 3-D model based on ~\cite{kukamanipulator} and image is taken from~\cite{RnD2Rajagopal}}
+\end{center}
+
+\newpage
+The raw joint angles of the youBot can't be used in kinematic and dynamic computations in KDL since the model has a different coordinate system representation comparing the real robot. So, it is important to compute the offsets for the model w.r.t. the youBot coordinate system i.e. by default, the youBot manipulator is present in the minimum configuration in the real system but 3-D model represents candle configuration as the minimum configuration hence offset calculation is needed to represent the joint information properly in KDL before inputting the joint positions to the forward position kinematics, torque computations.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Joint \\ No.\end{tabular}}}} & \multicolumn{4}{l|}{\textbf{youBot raw values(in Radians)}}               & \multicolumn{4}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}youBot-store 3D model \\ (in Radians)\end{tabular}}} \\ \cline{3-10} 
+\multicolumn{2}{|l|}{}                                                                               & \textbf{Min} & \textbf{Max} & \textbf{Candle} & \textbf{Folded} & \textbf{Min}            & \textbf{Max}            & \textbf{Candle}            & \textbf{Folded}            \\ \hline
+\multicolumn{2}{|l|}{1}                                                                              & 0.0          & 5.8992       & 2.9496          & 0.0             & -2.9496                 & 2.9496                  & 0.0                        & -2.9496                    \\ \hline
+\multicolumn{2}{|l|}{2}                                                                              & 0.0          & 2.7053       & 1.1345          & 0.0             & -1.1345                 & 1.1345                  & 0.0                        & -1.1345                    \\ \hline
+\multicolumn{2}{|l|}{3}                                                                              & -5.1836      & 0.0          & -2.5482         & 0.0             & -2.6354                 & 2.5482                  & 0.0                        & 2.5482                     \\ \hline
+\multicolumn{2}{|l|}{4}                                                                              & 0.0          & 3.5779       & 1.7890          & 0.0             & -1.7890                 & 1.7890                  & 0.0                        & -1.7890                    \\ \hline
+\multicolumn{2}{|l|}{5}                                                                              & 0.0          & 5.8469       & 2.9234          & 0.0             & -2.9234                 & 2.9234                  & 0.0                        & -2.9234                    \\ \hline
+\end{tabular}
+\end{table}
+
+It is important to consider the correctness of the frame diagram provided by KDL library before jumping into the implementation of the same. This work has an important finding with KDL's frame diagram and it is explained in detail as follows
+
+\begin{figure}[h]
+\centering     %%% not \center
+\subfigure[KDL segment, image from kinematic-trees section of the kdl user-manual~\cite{smits2011kdl}]{\label{fig:a}\includegraphics[width=60mm]{pictures/kdl_segment}}
+\subfigure[Modified KDL segment]{\label{fig:b}\includegraphics[trim=0 300 0 250, width=75mm]{pictures/KDL_segment_modified}}
+\caption{Correction in KDL frame diagram}
+\end{figure}
+
+The sample application is created to check whether the inertia is being felt in the reference frame or the tip frame of the segment. Consider an example where the tip of segment is translated by [0.5, 0.0, 0.0] (in meters) from the joint by 0.5 meters in x-axis and the CoM can be located by the vector [x = 0.5, y = 0.0, z = 0.0] (in meters) from the reference frame of the body. Where the result of this experiment is -9.81 Nm due to the lever arm of the tip frame and the CoM vector. According to this experiment, it is proven that the CoM vector is not located w.r.t. the reference frame of the body rather it is defined w.r.t. the tip frame. So, it is mandatory to represent the CoM vector w.r.t. the reference frame as per the convention used by the youBot-store's 3D model. This transformation can be easily done by multiplying the inverse of the transform from $^{tip}X_{joint}$ (the relative pose from the reference frame to tip frame) with the CoM vector.
+
+The convention used in KDL is different from the conventions in youbot-store model~\cite{kukamanipulator}. For example, the following Fig.~\ref{fig:a1} depicts the convention used by Orocos KDL library and the orientation of the inertial frame is same as the reference or joint frame. This means that inertial frame is just translated w.r.t. the segment's reference frame. On the other hand, youbot-store model uses the convention where the inertial frame is both translated by $P_{oc}$ vector and oriented differently by Z-Y-X angle. This work considers that both the segment's reference and joint frames are the same.
+
+\begin{figure}[h]
+\centering
+\subfigure[KDL segment, image from kinematic-trees section of the kdl user-manual~\cite{smits2011kdl}]{\label{fig:a1}\includegraphics[width=60mm]{pictures/kdl_segment}}
+\subfigure[Youbot-store segment]{\label{fig:b1}\includegraphics[trim=0 300 0 250, width=75mm]{pictures/store_segment}}
+\caption{Different conventions used by kdl and youBot-store}
+\end{figure}
+
+Based on the finding given above, if the developer wants to use the KDL library for kinematic and dynamic computations then the convention of the 3-D model has to be the same as KDL representation i.e, this work uses the youbot-store model to compute model torques hence the convention is changed according to KDL's convention as follows. The orientation of the inertial frame in the youBot-store model is not matching up with the convention used in KDL. So, the following equation~\eqref{eqn:jointinertiaorientationchange} can be used to align the orientation of the inertial frame w.r.t. the orientation of the joint reference frame.
+
+\begin{equation}
+I_{\{Joint\}} = R^T \cdot I_{\{cog\}} \cdot R
+\label{eqn:jointinertiaorientationchange}
+\end{equation}
+
+where I$_{\{Joint\}}$, I$_{\{cog\}}$ represents the rigid body inertia with respect to the joint frame, center of gravity respectively and the rotation matrix that is used as the reference orientation R is taken from the joint frame. 
+
+\section{Semantics for rigid-body algorithms}
+
+The definitions and the conventions of this section are written based on the reference from articles~\cite{geometicsemanticspart1}~\cite{geometicsemanticspart2}. An important characteristics of the manipulation involves the analysis of the motion of the rigid bodies in three dimensional space and the rigid body which can't deform is considered in this work. Each and every rigid-body has 6-DoF (3-DoF each for the rotation and translation) in space where there are no constraints present. Basically, a constraint refers to the joint when it is attached to the rigid body, only 1-DoF exists. The geometrical relations between the rigid bodies such as position, orientation, pose, linear, angular velocity and twist, forces, torques and wrenches are important for the rigid-body algorithm. The pose, relative motion and the relative effort transmission between the rigid bodies must be represented in a very well defined coordinate system. If the developer fails to choose the coordinate system carefully it might lead to the logical errors that are difficult to trace. The coordinate system representations are mostly implicitly defined by the libraries such as Simbody~\cite{sherman2011simbody}, KDL~\cite{smits2011kdl} and the authors define their own representations which are semantically correct. So, it is important to decode the implicit conventions in order to avoid the logical errors in the geometrical relation semantics representation of the rigid bodies. For example, the following diagram shows different conventions used by two different authors hence the homogeneous transformation matrix that is useful in finding the relative pose between the two frames changes the coordinate calculations accordingly.
+
+\begin{figure} [H]
+\centering     %%% not \center
+\subfigure[JJ. Craig]{\label{fig:craigconvention}\includegraphics[width=70mm]{pictures/jjcraig_motionandwrenchtransmission.png}}
+\subfigure[Featherstone]{\label{fig:featherstoneconvention}\includegraphics[width=70mm]{pictures/featherstone_motionandwrenchtransmission.png}}
+\caption{Different conventions used by different authors~\cite{featherstone2014rigid}~\cite{craig2005introduction}.}
+\label{fig:diffinconventions}
+\end{figure}
+
+The inverse of the transform can be computed numerically with the following equations. 
+
+\begin{align*}
+	& \textbf{JJ Craig}&&\textbf{Featherstone} \\
+    & ^{{A}}P = ^{{A}}_{{B}}R \cdot ^{{B}}P + ^{A}P_{Borg}&&^{{B}}P = ^{{B}}_{{A}}R^{T} \cdot ^{A}P^{-1}_{Borg} + ^{A}P\nonumber \\ \\
+    & && ^{B}P = ^{B}_{A}R\cdot ^{A}P - ^{B}_{A}R\cdot ^{A}P_{Borg} \\ \\
+    & && ^{B}P = ^{B}_{A}R\cdot (^{A}P - ^{A}P_{Borg}) \\ \\
+    & ^{A}_{B}T = \begin{bmatrix}
+    				^{{A}}_{{B}}R & P_{Borg} \\
+    				\textbf{0} & 1
+				  \end{bmatrix} && ^{B}_{A}T = \begin{bmatrix}
+    				^{{B}}_{{A}}R & -^{{B}}_{{A}}R\cdot ^{A}P_{Borg}\\
+    				\textbf{0} & 1
+				  \end{bmatrix}
+\end{align*}
+
+In Fig.~\ref{fig:craigconvention}, the pose of the frame \{b\} can be located w.r.t. the reference frame \{A\}. Whereas the Featherstone represents the pose of the frame \{A\} w.r.t. the reference \{B\} as depicted in Fig.~\ref{fig:featherstoneconvention}. 
+
+\subsection{Three-link manipulator semantics and overview}
+
+\subsubsection*{Semantics with poses}
+The above computations for the difference in convention between two methods~\ref{fig:diffinconventions} are numerically performed using the coordinate representations of the rigid bodies where the geometrical relation semantics checking is not happening. The numerical computations has led us into the logical errors in the previous work~\cite{RnD2Rajagopal}. But this work makes a valid attempt to adapt to the standard use-cases defined by~\cite{geometicsemanticspart2} which are relevant in computing the geometric relations between rigid bodies instead of considering only the coordinate calculations. The use cases are the standardized semantic checks that assists the developer in avoiding the logical mistakes in the geometrical relations construction and it is briefly discussed in~\cite{geometicsemanticspart1}. The four use-cases are 
+
+\begin{itemize}
+\item Coordinate calculations 
+\item Semantics checking 
+\item Coordinate semantics checking
+\item Finally the combination of the coordinate calculations and the coordinate semantics checking. 
+\end{itemize}
+
+The following example as depicted in Fig.~\ref{fig:semanticsusecases} is taken as a reference to explain all the use cases on a 3-link manipulator in a detailed manner. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm, trim=0 250 0 200]{pictures/semantics_usecases}
+\caption{3-link manipulator in order explain all the four use cases}
+\label{fig:semanticsusecases}
+\end{figure}
+
+The relative pose of the rigid body B w.r.t. the body A can be given as $Pose ((c,{c}) | C, (b,{b}) | B)$ where (c, \{c\}) represents the position and orientation of the body C w.r.t. the reference body B. The first use case for the inverse and compose operations can be computed as follows
+\begin{align}
+& ^{\{b\}|B}T_{\{c\}|C} = ^{\{c\}|C}T^{-1}_{\{b\}|B} \\
+& ^{\{b\}|B}T_{\{d\}|D} = ^{\{b\}|B}T_{\{c\}|C} \cdot ^{\{c\}|C}T_{\{d\}|D} \\
+& ^{\{b\}|B}T_{\{e\}|E} = ^{\{b\}|B}T_{\{d\}|D} \cdot ^{\{d\}|D}T_{\{e\}|E}
+\end{align}
+
+The second use case involves the semantics checking
+\begin{align}
+& Pose(\{c\}|C, \{b\}|B) = inverse(Pose(\{b\}|B, \{c\}|C)) \\
+& Pose(\{d\}|D, \{b\}|B) = compose(Pose(\{d\}|D, \{c\}|C), Pose(\{c\}|C, \{b\}|B)) \\
+& Pose(\{e\}|E, \{b\}|B) = compose(Pose(\{e\}|E, \{d\}|D), Pose(\{d\}|D, \{b\}|B))
+\end{align}
+
+The third use case involves the coordinates semantic checking which also considers the coordinate frame check as given below
+\begin{align}
+& PoseCoord(\{c\}|C, \{b\}|B, [b]) = inverse2(PC(\{b\}|B, \{c\}|C, [c])) \\
+& PoseCoord(\{d\}|D, \{b\}|B, [b]) = compose(PC(\{d\}|D, \{c\}|C, [c]), PC(\{c\}|C, \{b\}|B, [b])) \\
+& PoseCoord(\{e\}|E, \{b\}|B, [b]) = compose(PC(\{e\}|E, \{d\}|D, [d]), PC(\{d\}|D, \{b\}|B, [b]))
+\end{align}
+
+where PC is the pose coordinates. The $PoseCoord(\{d\}|D, \{b\}|B, [b]$ is determined by composing the pose coordinates $PC(\{c\}|C, \{b\}|B, [b])$ and the pose coordinates \\$PC(\{d\}|D, \{c\}|C, [c])$ as given in the above equation. The reference point, reference orientation frame, and the reference body of the first pose in the compose operation in equation 3.11 have to be equal to the point, orientation frame, and the body of the second pose. The fourth use case checks the coordinate semantics of the poses that results from the inverse, compose operations can be verified from the arguments of the compose operation. At last the numerical operations based on the coordinate representations can be generated from the semantic equations of the third use case. If the software is built based on these semantic rules, it is possible to avoid the logical errors in the geometrical relation semantics between the rigid bodies. The possible logical error in the pose related semantics is that the poses and the orientation coordinate representations are composed in the wrong order. Since the coordinate system selection varies from one developer to another as depicted in Fig.~\ref{fig:diffinconventions} and the order of the composition indicates the geometric relation between the rigid bodies which is not commutative.
+
+\subsubsection*{Motion and force related semantics}
+
+The motion transforms discuss about the semantics that needs to be considered to transmit the velocity or the acceleration of a particular rigid-body to its successor body. The motion transforms are considered as easy to implement but the real problem comes when different libraries are combined together for the purpose of achieving the common goal which in-turn introduces the different semantic representations used by the different authors i.e., Orocos KDL~\cite{smits2011kdl}, Simbody~\cite{sherman2011simbody}, Atkeson et. al.~\cite{Atkeson}, Featherstone~\cite{featherstone2014rigid}. It is only fair to explain the concept of kinematics before getting into further details. Kinematics is the study of motion of the objects without taking the forces into consideration that cause the motion. The kinematics can be classified into forward and inverse kinematics. This work uses only the forward kinematics which includes position, velocity and acceleration kinematics. The forward kinematics have undergone logical changes comparing the previous RnD~\cite{RnD2Rajagopal} since the implicit conventions are analyzed and briefed in a detailed way. The twist or acceleration of a body has the point, reference and target body, coordinate frame information attached to it in the level of semantics. 
+
+\subsection{Orocos KDL's geometrical relation semantics}
+
+It is really important to understand the semantics used by the library before jumping into the implementation details of it. If the developer fails to do so, the computations are going to be introduced with the logical errors in different levels such as the pose, motion and force level. So, lets start with the semantics considered by the Orocos KDL~\cite{smits2011kdl} library and then the changes required to keep up with the standard semantic conventions. 
+
+\subsubsection*{Semantics with poses}
+
+The position and orientation of the segment in KDL can be given as
+
+\begin{equation}
+\begin{aligned}
+& p : Position (tip_i, joint_i) \\
+& R : Rotation ([tip_i], [root_i])
+\end{aligned}
+\end{equation}
+
+where p represents the position of the $tip_i$ w.r.t. the $joint_i$ position and R represents the relative orientation of the frame $[tip_i]$ w.r.t. the frame $[root_i]$.
+
+\subsubsection*{Semantics with forward velocity kinematics}
+
+A twist is the combination of both the translational and angular/rotational velocities. The twist $v_i$ of the $body_i$ can be computed by adding the twist of the predecessor body with the twist contribution of the $joint_i$~\eqref{eq:velocitymotiontransform}.
+
+\begin{equation}
+v_i = \overbrace{^iX_{i-1}\cdot v_{i-1}}^{transform} \overbrace{+}^{compose}  \overbrace{S_i\cdot \dot{q}_i}^{V_J}
+\label{eq:velocitymotiontransform}
+\end{equation}
+
+where the twist at joint i is projected into the joint's internal axis using the subspace matrix $S_i$, the motion transform transmits the twist contribution of the predecessor body $v_{i-1}$ to the current body $v_i$. The addition operation of the twists in the equation~\eqref{eq:velocitymotiontransform} can be viewed in two different ways. At first, it can be seen that the numerical calculation adds the twists of two different bodies with the simple matrix operations. Another consideration is that the addition of the twists has to be semantically right. The compose operation adds the Twist($S_i\cdot \dot{q}_i$) with the Twist($^iX_{i-1}\cdot v_{i-1}$) to get the Twist $v_i$. Based on the coordinate semantic representation of the twist during the integration discussed by~\cite{geometicsemanticspart1}~\cite{geometicsemanticspart2}, the twists can be integrated only when the twists are represented at a common point and at the same coordinate frame. If the semantics of the twists are different from these conventions then the developer has to consider the change point operation and change coordinate operation to form the proper geometrical relation between the rigid bodies.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=100mm, trim=0 250 0 250]{pictures/kdl_rigidbody_semantics}
+\caption{Velocity motion transform semantics used in Orocos KDL}
+\end{figure}
+
+The twist of the $body_i$ w.r.t. the $Body_{i-1}$ at point $joint_i$ can be given as
+
+\begin{equation}
+v_J = Twist(joint_i|Body_i, Body_{i-1}, [root_i])
+\label{eq:twistofthecurrentbody}
+\end{equation}
+
+where $v_J$ represents the semantics representation of the twist at joint i. The twist of the previous body can be given semantically 
+
+\begin{equation}
+v_{i-1} = Twist(joint_{i-1}|Body_{i-1}, Body_w, [root_{i-1}])
+\label{eq:twistofthepreviousbody}
+\end{equation}
+
+where $Body_w$ is the predecessor of the $Body_{i-1}$ or it can be considered as the ground body. The forward velocity kinematics are supposed to integrate the twists of the current body $V_J$ as given in the equation~\eqref{eq:twistofthecurrentbody} and the twist of the predecessor $v_{i-1}$. Where the semantics checking fails due to the reason that both twists are represented in the different coordinates and in different point. So, the change point and the change of coordinates are really important for the compose operation and it is computed in the following equations. The change point operation can be semantically given as
+\begin{equation}
+\begin{aligned}
+v'_{i-1} = {} & Twist(joint_{i-1}|Body_{i-1}, Body_w,  [root_{i-1}]) \\ 
+& .changePoint(joint_i|Body_{i-1}, joint_{i-1}|Body_{i-1}, [root_{i-1}])
+\end{aligned}
+\end{equation}
+
+The change point operation in the predecessors' velocity result in the following semantics
+
+\begin{equation}
+v_{cp} = Twist(joint_i | Body_{i-1}, Body_w [root_{i-1}])
+\end{equation}
+
+where $v_{cp}$ represents the change point operation on the twist and the change coordinate operation on the same can be semantically extracted as
+\begin{equation}
+\begin{aligned}
+v_{cc} = {} & TwistCoordinates(joint_i|Body_{i-1}, Body_w, [root_i]) \\ & .changeCoordinateFrame(OrientationCoordinates([root_{i-1}]|Body_w, \\&[root_i]|Body_w, [root_i]))
+\end{aligned}
+\end{equation}
+
+The change coordinate frame $v_{cc}$ results with the following semantics 
+
+\begin{equation}
+v_{cc} = Twist(joint_i | Body_{i-1}, Body_w, [root_i])
+\label{eq:predecessorstwistwithsemanticchanges}
+\end{equation}
+
+Now, the twists in the equations~\eqref{eq:predecessorstwistwithsemanticchanges} and~\eqref{eq:twistofthecurrentbody} are semantically correct for the compose operation.
+
+\begin{equation}
+v_i = compose(v_J, v_{cc})
+\end{equation}
+
+and the geometric relation of the twist $v_i$ results in the following equation
+\begin{equation}
+v_i = Twist(joint_i | Body_i, Body_w, [root_i])
+\end{equation}
+
+\subsubsection*{Semantics with forward acceleration kinematics}
+
+Similar to the velocity motion transform, the acceleration semantics can be extracted for the KDL library. The acceleration kinematics can be computed by
+
+\begin{equation}
+a_i = \overbrace{^iX_{i-1}\cdot a_{i-1}}^{transform} \overbrace{+}^{compose} \overbrace{S_i\cdot \ddot{q}_i}^{a_J} \overbrace{+}^{superpose}  \overbrace{v_i \times S_i\cdot \dot{q}_i}^{Bias}
+\label{eq:accelerationkinematicsandsemantics}
+\end{equation}
+
+where the first compose operation of the acceleration at the joint i with the predecessor body i-1 can be done as same the velocity kinematics which involves motion transmission. The second addition operator is referred as superpose operation since the physical meaning of the addends are different. The above equation~\ref{eq:accelerationkinematicsandsemantics} can be simply viewed as the following 
+
+\begin{equation}
+a_i = a_{i-1} + a_J + bias
+\label{eq:simplifiedacceleration}
+\end{equation}
+
+The acceleration at joint i has the following relation
+
+\begin{equation}
+a_J = Acceleration(joint_i | Body_i, Body_{i-1}, [root_i])
+\end{equation}
+
+The acceleration of the body i-1 can be represented with the geometric relations as
+
+\begin{equation}
+a_{i-1} = Acceleration(joint_{i-1} | Body_{i-1}, [root_{i-1}])
+\end{equation}
+
+The change point and coordinates of the predecessor body's acceleration. The change point operation can be computed as
+\begin{equation}
+\begin{aligned}
+a_{cp} = {} & Acceleration(joint_{i-1}|Body_{i-1}, Body_w,  [root_{i-1}]) \\ 
+& .changePoint(joint_i|Body_{i-1}, joint_{i-1}|Body_{i-1}, [root_{i-1}])
+\end{aligned}
+\end{equation}
+
+which results in the following equation
+\begin{equation}
+a_{cp} = Acceleration(joint_i, Body_{i-1}, Body_w, [root_{i-1}])
+\end{equation}
+
+The change coordinate frame can be done with the following equation
+
+\begin{equation}
+\begin{aligned}
+a_{cc} = {} & AccelerationCoordinates(joint_i|Body_{i-1}, Body_w, [root_i]) \\ & .changeCoordinateFrame(OrientationCoordinates([root_{i-1}]|Body_w, \\&[root_i]|Body_w, [root_i]))
+\end{aligned}
+\end{equation}
+
+which results in the following equation
+\begin{equation}
+a_{cc} = Acceleration(joint_i, Body_{i-1}, Body_w, [root_i]) 
+\end{equation}
+
+Now the semantics checking is succeeded and the superpose operation is performed $(a_{cc} + a'_i)$ based on~\cite{traversaro2016multibody} in equation~\ref{eq:simplifiedacceleration} results in the following geometric relation semantics
+
+\begin{equation}
+a_i = Acceleration(joint_i | Body_i, Body_w, [root_i])
+\label{eq:finalacceleration}
+\end{equation}
+
+\subsubsection*{Semantics with forces and torques}
+
+The recursive Newton-Euler formulation~\cite{smits2011kdl} in the spatial form which is used by the KDL library can be given as
+
+\begin{equation}
+f_I = I_i\cdot a_i + v_i\cdot \times (I_i\cdot v_i) - f_{{ext}_i}
+\end{equation}
+
+where the acceleration $a_i$ is mapped with the function I which gives the forces required, I represents the inertia of the rigid-body i. The semantics of the inertia has the information such as frame, and the body. The reference frame of the inertia can be assumed to be the frame that is  attached in the target body as inertia represents the particular body. So the semantics of the operation $I_i\cdot a_i$ is same as the semantics of $a_i$ given in the equation~\eqref{eq:finalacceleration}. The other forces such as bias and external forces should have the same semantics as the first term for the integration operation. The torques can be extracted by projecting the spatial forces into the joint's internal axis as 
+
+\begin{equation}
+\tau_i = S_i\cdot f_i
+\end{equation}
+
+where S represents the subspace matrix that projects the force into internal axis of the joint. It is assumed that the torque is represented in the target joint frame as the joint has a reference as well as the target frame. The reference frame is present in the predecessor and the target frame is the one which is attached in the target body that is being referred to. Formally, the force transform does the change point and coordinate frame operations as same as the semantics derived in the velocity and acceleration kinematics and once the semantics with the transform matches up with the semantics of $f_i$, the compose operation can be performed.
+
+\subsection{Featherstone's geometrical relation semantics}
+
+Before getting into the details of the pose, motion and force semantics, it is mandatory to go through the conventions used for the rigid body.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=100mm, trim=0 250 0 250]{pictures/featherstone_rigidbodyi}
+\caption{Rigid body semantics in the article~\cite{featherstone2014rigid}}
+\end{figure}
+
+\subsubsection*{Semantics with poses}
+The position and orientation of the segment is the same as the KDL segment 
+
+\begin{equation}
+\begin{aligned}
+& p : Position (tip_i, joint_i) \\
+& R : Rotation ([tip_i], [root_i])
+\end{aligned}
+\end{equation}
+
+\subsubsection*{Semantics with forward velocity kinematics}
+
+In~\cite{featherstone2014rigid}, author considers the point at which the twist is represented is same as the origin of $root_i$ hence there is absolutely no need of either the change point and orientation coordinates. The change point and orientation coordinates are accounted in the form of spatial transforms. This method is the inverse of the semantic representations used by KDL.
+
+\begin{equation}
+v_J = Twist(root_i|Body_i, Body_{i-1}, [root_i])
+\end{equation}
+
+\subsubsection*{Semantics with forward acceleration kinematics}
+
+The acceleration semantics can be given as
+
+\begin{equation}
+a_J = Twist(root_i|Body_i, Body_{i-1}, [root_i])
+\end{equation}
+
+\subsubsection*{Semantics with forces and torques}
+The semantics for forces, torques and force transforms in this rigid body algorithm can be extracted as same as the KDL. The only difference is that the propagation of forces between the rigid bodies does not require the change point and coordinate frame operation. 
+
+\section{Inertial parameter estimation}
+
+The random trajectories were used for the identification procedure in the previous work~\cite{RnD2Rajagopal}. These trajectories are not periodic and it is not possible to make sure whether the whole robot workspace is covered or not. With excitation trajectory analysis concentrating on even the smallest changes of the dynamic model parameters, we can better estimate the parameters.
+
+\subsection{Excitation trajectories}
+This section discusses the method that produces optimal robot excitation trajectories that are suitable for identifying the dynamic model parameters with trajectories covering the most of the workspace~\cite{SweversJ1997Orea}~\cite{vantilt2015optimal}. The parameterization and optimization of the robot excitation trajectories can be generated with the following method. 
+
+\subsubsection*{Parameterization of the excitation trajectories}
+
+This section is based on an understanding from~\cite{SweversJ1997Orea}~\cite{swevers}.
+The aim of the trajectory parameterization method is to generate the periodic and bandlimited data that improves the accuracy in parameter estimation. The parameterization can be done by using the finite Fourier series which is the sum of harmonic sine and cosine functions. This function generates the data for all the manipulator joints $N$ and it can be generated using the following equation
+
+\begin{equation}
+q_i(t) = \sum_{j=1}^{N_i} \frac{a{_j^i}}{w_f\cdot j} sin(w_f\cdot j\cdot t) - \frac{b{_j^i}}{w_f\cdot j} cos(w_f\cdot j\cdot t) + q_i(0)
+\label{eq:ffs}
+\end{equation}
+
+where $w_f$ represents the frequency which is common for all the joints, t represents time, $a{_j^i} b{_j^i}$ represents the coefficients or amplitude of the functions sine and cosine, $q_i(0)$ is the initial position of the joint. The Fourier series has the periodic function with the period $T_f = 2\pi/w_f$ and it has 2N + 1 parameters that represent the DoF for the trajectory optimization. The basic idea of the parameterization of the trajectory involves selecting a low fundamental frequency which offers the longer excitation period. The velocities and accelerations can be generated by taking the derivative and double derivative of the equation~\eqref{eq:ffs}.
+
+\subsubsection*{Optimization of the excitation trajectories}
+
+The optimal values of the coefficients can be selected through experiments based on the trial-and-error method or by solving the non linear optimization problem with the constraints imposed on the robot motion~\cite{swevers}. The d-optimality criterion is used as an objective function that depends on the robot trajectory data that has been applied to the observation matrix K and the resulting matrix is stacked up vertically with the feasible solutions. The general optimization problem~\cite{boyd2004convex} finds the best possible solution from the available solutions. The main objective of the optimization problem is to minimize the objective function f(x) with the input vector x is subject to the equality and inequality constraints. In this work, x has parameters a, b, q(0) to optimize/minimize and the f(x) can be optimized with two different methods as given below. The determinant of the matrix gives sufficient details about the scores of the optimization. 
+\begin{equation}
+f(x) : min(a{_j^i}, b{_j^i}, q_i(0)) det(K^T\cdot K)
+\end{equation}
+
+\begin{flushleft}
+If the $det(K^T\cdot K)$ is equal to 0, it means that the matrix $K^TK$ is singular and the rows and columns of the matrix $K^TK$ are linearly not independent. Whereas the other method is based on finding the condition number
+\end{flushleft}
+
+\begin{equation}
+f(x) : min(a{_j^i}, b{_j^i}, q_i(0)) cond(K^T\cdot K)
+\end{equation}
+
+The above given equation is constructed based on the approach given by~\cite{vantilt2015optimal}\cite{swevers}. The large condition number means that the small change in the observation matrix can lead to a large change in output hence the highest scores are considered to be inefficient. The equality constraints of this optimization problem can be given as
+\begin{align*}
+& h^1(x) : lower\_joint\_limit <= q(a, b, q_0) <= upper\_joint\_limit \\
+& h^2(x) : lower\_joint\_limit <= \dot{q}(a, b, q_0) <= upper\_joint\_limit \\
+& h^3(x) : lower\_joint\_limit <= \ddot{q}(a, b, q_0) <= upper\_joint\_limit \\
+& h^4(x) : lower <= FPK(q) (no collision)
+\end{align*}
+
+The K matrix is constructed by vertically stacking up the result of the way-points of the optimized trajectory that is applied to the K matrix. 
+\begin{equation}
+K = \begin{vmatrix}
+K(q(1), \dot{q}(1), \ddot{q}(1)) \\
+.\\
+.\\
+.\\
+K(q(N), \dot{q}(N), \ddot{q}(N)) \\
+\end{vmatrix}
+\end{equation}
+
+\newpage
+
+\section{Model-based controller for a non-linear system}
+
+This section explains the model-based controller for the non-linear system which is considered in this work. As discussed in the previous sections, the joint-space controller is implemented in this work and the pictorial representation is shown in Fig.~\ref{fig:jointspacecontroller}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=100mm, trim=0 400 0 300]{pictures/jointspacecontroller}
+\caption{Joint space controller}
+\label{fig:jointspacecontroller}
+\end{figure}
+
+This work uses the advanced joint control mode that commands torque to the manipulator joints in order to achieve the particular target. Since the controller is attached in the joint space of the youBot manipulator and it is not defined in the operational task space. The accuracy of this control method heavily relies on the accuracy of the dynamic model parameters and the encoder that is attached to the individual joints of the manipulator. The following Fig.~\ref{fig:simpletorquemode} gives overview of operations before commanding the torque to the real system.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=60mm, trim=0 20 0 20]{pictures/torque_mode}
+\caption{Torque control mode}
+\label{fig:simpletorquemode}
+\end{figure}
+
+In addition to the commanded torque, the gravity compensation torque is also added as a feed-forward mechanism. The result of this addition goes through clamping and this feature is particularly important in handling the out-of-bounds or NaN torque commands. The class diagram for the package implemented in this work is depicted in Fig.~\ref{fig:classdiagram}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=50mm]{pictures/classdiagram_package.pdf}
+\caption{The complete class diagram for the model-based controller which is implemented in this work.}
+\label{fig:classdiagram}
+\end{figure}
+
+\subsection{Dynamic model based on Orocos KDL}
+
+There are two kinds of controllers as depicted in Fig.~\ref{fig:basicapproach} and~\ref{fig:alternateapproach}. The approach specified in Fig.~\ref{fig:basicapproach} is implemented on the youBot manipulator where the problem persists with the inaccurate rotational inertia parameters, hence the alternate method is chosen as depicted in Fig.~\ref{fig:alternateapproach}. An important feature of consideration in computed-torque control~\cite{muggler2013torque} is the dynamics of the manipulator whereas the joint position or velocity control do not account the dynamics and the joint configuration. Dynamics is the field of study where the relationship between the forces and the motion are investigated. The general equation of motion can be written as based on~\cite{muggler2013torque}
+
+\begin{equation}
+\tau = M(q)\ddot{q} + C(q, \dot{q})\dot{q} + G(q, \dot{q})
+\label{eq:dynamicmodel}
+\end{equation}
+
+where $\tau$ is the torque applied to the manipulator links. M represents the manipulator inertia matrix which comprises of mass, moments of inertia and C represents the Coriolis and Centrifugal forces which basically depends on the joint position and velocity. G represents the vector of external forces acting on the manipulator links such as gravity and friction effect. The non-linear dynamic equation of motion for the manipulator can be used to compute the joint torques for the given joint position, velocity and acceleration. The dynamics equation~\eqref{eq:dynamicmodel} has non-linear functions M, C and G of the model parameters. In order to control the non-linear system with the linear control, it is important to select the control input $\tau$ that follows the desired trajectory. The above equation~\eqref{eq:dynamicmodel} can be rewritten as 
+
+\begin{equation}
+\ddot{q} = M^{-1}(q) (\tau - C(q, \dot{q})\dot{q} - G(q, \dot{q}))
+\label{eq:forwarddynamics}
+\end{equation}
+
+if the non-linear terms in the above equation~\eqref{eq:forwarddynamics} are cancelled, it is possible to apply the linear control strategies. If the non-linear terms are known, it is possible to choose the control input as given in the equation~\eqref{eq:knownnonlinearterms}for the PD control loop 
+
+\begin{equation}
+\tau = M(\theta) \ddot{q} + C(\theta, \dot{\theta})\dot{\theta} + G(\theta, \dot{\theta})
+\label{eq:knownnonlinearterms}
+\end{equation}
+
+The following equation can be regarded as the closed-loop error dynamics where the $K_D$ term is equal to 0 and it is referred from the article~\cite{Chung2016}
+
+\begin{equation}
+\dot{q}_d = (q_e\cdot K_p + \sum q_e\cdot K_i)
+\end{equation}
+
+\begin{equation}
+\ddot{q} = limit(\dot{q}_e\cdot K_p + \sum \dot{q}_e\cdot K_i)
+\end{equation}
+
+where $K_p, K_i$ represents the proportional and derivative gains of the PI control respectively and the gains are going to be optimized by manually tuning for each and every link of the manipulator. The manual tuning can be done based on the experiments by investigating the individual step responses for the particular joints. Otherwise, overshoot occurs when the gains are not optimal and the stability of the system can’t be achieved. $q_e, \dot{q}_e$ represents the position and the velocity error as given in the following equations
+
+\begin{equation}
+q_e = q_d - q_m
+\end{equation}
+\begin{equation}
+\dot{q}_e = \dot{q}_d - \dot{q}_m
+\end{equation}
+
+where $q_d$ represents the desired joint angle and $q_m$ represents the measured joint angle of an individual joint. $\dot{q}_d$ represents the desired joint velocity and $\dot{q}_m$ is the measured joint velocity of an individual joint.
+
+Alternate method is chosen in this work which is a simple computed-torque control scheme. The dynamic model gets the measured joint positions and velocities from the manipulator joints with the zero acceleration. The $\ddot{q}$ is zero as depicted in Fig.~\ref{fig:alternateapproach}, so the equation~\eqref{eq:dynamicmodel} can be rewritten as 
+
+\begin{equation}
+\tau = C(q_m, \dot{q_m})\cdot \dot{q_m} + \tau_g(q_m)
+\end{equation}
+
+The above equation can't accelerate the joints but it computes the gravitational term and the Coriolis, Centrifugal terms. 
+
+\subsubsection*{Gravity compensation}
+
+The gravity compensation torques $\tau_g(q)$ are computed based on the KDL model which has been specified in the previous section. The model based gravity compensation on the manipulator joints and the gravity compensation for joint 1 and 5 can not be computed since these two joints are fixed.
+
+\subsubsection*{Friction modelling and compensation}
+
+Friction is one of the important effects that need to be accounted in the control systems. The control systems try to compensate the friction effects by tuning the controller gains to a higher value, so there is a need of a friction model and the compensation technique. Friction has a significant effect on the mechanical systems where the precision is the ultimate goal and there are many friction modelling schemes have been introduced~\cite{corberan2012haptic}. It can be classified into static and kinetic(dynamic) friction.
+
+\SetKw{KwBy}{by}
+
+\begin{algorithm}
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{directionOfDesiredVelocity} $(\dot{q}_d)$\;
+    \Input{$\dot{q}_d$}
+    \Output{$scale$}
+    \uIf{$(\dot{q}_d < 0$}
+    {
+    		scale = -1;
+		return scale;
+    }
+    \uElseIf{$\dot{q}_d > 0$}
+    {
+    		scale = 1:
+    		return scale;
+    }
+    \uElse
+    {
+    		scale = 0;
+    		return scale;
+    }
+    \caption{Direction of the desired velocity}
+\end{algorithm}
+
+\begin{algorithm}
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{frictionModel} $(\dot{q}_d, \dot{q}_m)$\;
+    \Input{$m, \dot{q}_m,$,\\ $n\gets5$,\\$static\_friction$,\\$kinetic\_friction$}
+    \Output{$\tau_f$}
+    \uIf{$|\dot{q}_d| > 0.0$}
+    {
+    \For{$joint\_number\gets0$ \KwTo $n$ \KwBy $1$}{
+      \uIf(\tcc*[h]{The joint is not moving}){$|\dot{q}_m| <= 0.01$}
+      {
+        $\tau_s = static\_friction[joint\_number] \cdot sgn(\dot{q}_d[joint\_number])$\;
+      	$\tau_f$ = $\tau_s$\;
+      }
+      {
+        \tcc{Coulomb friction modelling}
+      	%$\tau_c = \mu\cdot \tau_N \cdot sgn(\dot{q}_d)$\;
+      	$\tau_k = \tau_c\cdot sgn(\dot{q}_d[joint\_number])$\;
+		\tcc{Kinetic friction torque}
+        $\tau_f$ = $\tau_k$\;
+      }
+    }
+    }
+
+    return $\tau_f$\;
+    \caption{Friction observer}
+\end{algorithm}
+
+The friction values are identified based on trial-and-error method and the static friction estimates are readily available~\cite{RnD2Rajagopal}. The Coulomb friction is used to model the kinetic friction where the torque is constant irrespective of the input velocity value as given in the Fig.~\ref{fig:frictionmodel}. The Coulomb friction basically restricts the rotational motion of the joint. The static friction torque is applied to a particular joint makes the joint to overcome the static friction and it starts to move. This particular technique is referred to static friction compensation. Once the joint is in motion, the kinetic or dynamic friction torque is applied as the compensation term. This technique is referred to kinetic friction compensation.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=80mm, trim=0 180 0 220]{pictures/friction_staticandcoulomb}
+\caption{Friction model}
+\label{fig:frictionmodel}
+\end{figure}
+
+\newpage
+\subsection{Computed-torque control}
+
+Computed-torque control technique is widely used in the industrial robots and it works with the feedback mechanism to control the non-linear systems. The class diagram for the computed-torque controller is shown in Fig.~\ref{fig:classdiagram_computedtorquecontrol}. It is possible to apply the linear control strategies i.e., PI controller after the system is linearized. The linearization is achieved with the help of the KDL based ID solver which is the recursive Newton-Euler formulation. The working principle of the cascade controller is explained in the following section.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=150mm]{pictures/class_diagram_computedtorquecontrol.pdf}
+\caption{The class diagram for the computed-torque control.}
+\label{fig:classdiagram_computedtorquecontrol}
+\end{figure}
+
+\subsubsection*{Cascade PI controller}
+
+Most of the control applications use only the single-loop control for solving a control problem. The basic definitions of this section are referred from~\cite{cascadedcontrol}~\cite{astrom1995pid}. But this work uses the cascade control method that has two controllers where one controller's output drives the set-point of the secondary controller. The cascade control system can have one or more inner loops inside the main control loop (outer-loop), and the controllers are in cascade. The advantages of the cascade controller is the fast response and the better disturbance rejection. This work is not considering the D-term of the controller as it is assumed that the damping factor is already present in the system as the friction force. The main loop can be called as master loop and the inner loop is the secondary controller. The position PI controller is attached in the outer loop and the velocity PI controller is attached in the inner-loop. The position PI controller output is limited to a desired velocity before feeding it into the velocity controller. Based on this limiting feature, the velocity of the joint can be controlled and saturated when the limits are breached. It is particularly useful in avoiding the high-speed motions in joint level. The presence of the dynamic model makes this controller model-driven whereas the system is considered to be pure cascade PI control scheme if the dynamic model is not considered. 
+
+\begin{center}
+\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+    \node [input, name=input] {};
+    \node [block, right of=input, node distance=2.5cm] (pcontrol) {\textbf{\shortstack{Position\\ controller}}};
+    \node [block, right of=pcontrol, node distance=3cm](vcontrol) {\textbf{\shortstack{Velocity\\ controller}}};
+    \node [block, right of=vcontrol,
+            node distance=3.0cm] (robot) {\textbf{Process}};
+	\node [output, right of=robot, node distance=2.3cm](output){};
+	\node [output, right of=robot, node distance=2.3cm](output1){};
+	\draw [->,thick] (input) -- node {$q_d$} (pcontrol);
+	\draw [->,thick] (pcontrol) -- node {$\dot{q_d}$} (vcontrol);
+	\draw [->,thick] (vcontrol) -- node {$\tau$} (robot);
+    \draw [->,thick] (robot) -- node[pos=0.55] {} (output);
+    \draw [->,thick] (robot) -- node[pos=0.55] {} (output);
+	\draw [->,thick] (output) -- ++ (0,-1.3) -| node [pos=0.48] {$q_m$} (pcontrol);
+	\draw [->,thick] (output1) -- ++ (0,1.3) -| node [pos=0.8] {$\dot{q}_m$} (vcontrol);
+\end{tikzpicture}
+\captionof{figure}{Cascade PI controller}
+\end{center}
+
+\paragraph*{Position PI control}
+
+Position PI is the most commonly used control scheme which is used to perform the closed-loop control based on the position feedback. The joint position measurements are obtained from the encoder. This kind of a control is very useful and easy to use in tracking based applications. The control system is given with the set-point(SP) and the process/system executes the given command where the feedback will be given back to the control scheme where the regulation happens. The error $q_e$ is computed by finding the difference between the set-point and the measured positions is $q_d - q_m$. This error is given as an input to the PI controller where the p, i terms are getting computed.
+
+\begin{equation}
+\dot{q}_d = (q_e\cdot K_p + \sum q_e\cdot K_i)
+\end{equation}
+
+where the output of the position PI controller is commanded as the velocity set-point to the inner-loop as $\dot{q}_d$. 
+
+\paragraph*{Velocity PI control}
+In Velocity PI, a velocity set-point can be commanded to the system. The velocity set-point is is commanded by the position PI controller. This cascade mechanism is really useful in controlling the velocity set-points. The error is then calculated by subtracting the commanded set-point with the measured velocity. The error term $\dot{q}_e$ is computed by finding the difference between the velocity set-point and the process variable $\dot{q}_d - \dot{q}_m$. The error term is then fed to the PI controller for computing the P, I terms. 
+
+\begin{equation}
+\tau_{controller} = limit(\dot{q}_e\cdot K_p + \sum \dot{q}_e\cdot K_i)
+\end{equation}
+
+Eventually the controller produces the torque $\tau_{controller}$ that regulates the system by reducing the error terms very close to zero in the manipulator joints. The gravity compensation torques are then added to the controller torques as given as follows
+
+\begin{equation}
+\tau = \tau_{controller} + \tau_g(q)
+\end{equation} 
+
+\subsubsection*{Manual tuning of the controller gains}
+
+The controller gains are adjusted to optimum values to achieve the desired and stable response. The proportional $K_p$ and integral $K_i$ gains are tuned manually by adjusting the gain based on the step response of each joint. It is obvious that the increase in controller gain degrades the stability of the system since the gain has an influence on the rise time. Increasing the proportional gain $K_p$ results in the faster rising time and it might cause the overshooting which affects the stability of the system. So, the gradual increase in the proportional gain till the better step response is achieved. The joint level PID controller gains are retrieved from all the individual joints of the youBot manipulator through youBot driver and the gains are observed to be relatively close to the state-of-the-art method~\cite{muggler2013torque} and the observed values are given in the following table.
+
+\begin{table}[h]
+\centering
+\caption{Joint level PID gains of the youBot manipulator in the current mode of control}
+\label{jointgains}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|l|}{Joint No.}                                                & 1    & 2    & 3    & 4    & 5    \\ \hline
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Current\\ Mode\end{tabular}} & K$_p$ & 1200 & 1500 & 1500 & 3000 & 4000 \\ \cline{2-7}
+                                                                        & K$_i$ & 1000 & 1500 & 1500 & 3000 & 4000 \\ \cline{2-7} 
+                                                                        & K$_d$ & 0    & 0    & 0    & 0    & 0    \\ \hline
+\end{tabular}
+\end{table}
+
+In this work, cascade PI controller is used where the velocity PI controller is present in the inner loop and the position PI controller is the outer loop control which is the main controller. It is necessary to tune the gains to achieve the optimal controller performance, so both the controllers have to be tuned empirically to get the optimal controller gains. An important trade-off must be made when empirically tuning the gains of the joint. The ultimate goal of the controller is to achieve the accurate trajectory tracking for which the short rise time (as depicted in Fig.~\ref{fig:withoscillations}), faster settling time and the zero steady-state error are the mandatory requirements, but the short or faster rise time introduces oscillations, overshoot in the system which might cause damages to the motor, moreover the overshoot might breach the joint limits if the setpoints are close to the maximum or minimum limits of the joints. One of the major concerns of this work is the safety of the hardware irrespective of the accuracy that the developer wants to achieve in the controller. The other possible method is also depicted in the following Fig.~\ref{fig:withoutoscillations}.  
+
+\begin{figure}[h]
+\centering     %%% not \center
+\subfigure[Fast rise time]{\label{fig:withoscillations}\includegraphics[width=60mm]{pictures/joint1_tuning_1.png}}
+\subfigure[Slow rise time]{\label{fig:withoutoscillations}\includegraphics[width=60mm]{pictures/joint1_tuning_2.png}}
+\caption{The requirements of the controller and this figure represents the tradeoff between the slow and faster rise time.}
+\end{figure}
+
+So, the trade-off has been made which avoids the oscillations and the 
+
+\subsubsection*{Safety controller}
+An upper layer has been created around the controller to prevent the damages to the manipulator joints i.e. the torque is applied when the joint is already present in it's minimum or maximum positions. This controller enables the user to apply the control algorithms to the robot safely without thinking about the mishaps that can occur in the manipulation tasks. Basically, there are three kinds of checks are being performed such as position, velocity and torque. At first, the position control check is being performed to make sure that the torque is not commanded when the joint is in it's limits. Secondly, the velocity control checks the joint velocity for avoiding the high-speed motions on the manipulator that might hit the joint limits. So, this mode stops the controller when the velocity of the joint goes over the defined threshold. Finally, the torque control check is performed in order to keep the torque input in check before commanding it to the real robot. The safety controller allows the user to set the joint torque after all these three conditions are satisfied. If any of these three conditions fail, the velocity of the manipulator joints will be set to zero where the movement of the manipulator joints will be completely stopped irrespective of the manipulation task that is getting executed by the controller then the controller stops as well due to the safety concerns. This particular safety controller interface can be used where the joint limits are applicable.
+
+\newpage
+\subsection{Trajectory generation}
+
+Since the controller is attached in the joint-level, it is important to validate the controller with the use of a target trajectory. In this work, the trajectory way points are generated by using a simple sine wave-form where the amplitudes of the wave depends on the maximum and minimum limits of the individual joints.
+
+\begin{equation}
+q_{desired}(t) = A\cdot sin(\omega \cdot t) + \delta
+\label{eq:analyticalsinewave}
+\end{equation}
+
+where $q_{desired}$ represents the analytical time based function which has all the waypoints to achieve the particular target. $2*\pi / T_f$ is the frequency $\omega_f$ of the wave, A represents the amplitude, $T_f$ is the time taken for a complete single wave and finally $\delta$ represents the offset, t represents the time taken by the controller to complete one cycle. The waypoints are fed to the controller and the measured joint values are compared against the wave to check the controller's performance. Based on the generated wave, the controller's parameters can be verified for optimality. If the joint is not following the wave close-enough, the controller gains have to be reconsidered since there are not optimum. The maximum and minimum velocity of the joints can be identified by taking the differentiation of the equation~\eqref{eq:analyticalsinewave}
+
+\begin{equation}
+\dot{q}(t) = A\cdot \omega \cdot cos(\omega \cdot t)
+\label{eq:coswave}
+\end{equation}
+
+The analytical sine waveform is generated for the joint positions ($q_{desired}$) where the amplitude of the wave depends on the joint limits of the youBot manipulator. The sine wave is generated in every 10 seconds ($T_f$) and the way-points of the wave is commanded as the set-point to the cascade PI controller. The derivative operation on the function q(t) provides the velocity set-point $\dot{q}(t)$ for all the individual points in the generated sine wave.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=80mm, trim=0 0 0 0]{pictures/sinewave}
+\caption{The sine waveform based trajectory generation and the relative velocity qd ($\dot{q}$) is obtained by taking the derivative of q.}
+\end{figure}
+
+In order to find the maximum velocity A of the joint can be computed with the following equation. The $\omega$ is already specified where the maximum possible value for a cosine wave is 1.
+
+\begin{equation}
+\dot{q}_{max} = A\cdot \omega
+\label{eq:maxjointvelocity}
+\end{equation}
+
+similarly the minimum velocity of the joint can be identified with the following formulation where the amplitude can be computed by taking the difference between the minimum joint limit with the initial position of the joint.
+
+\begin{equation}
+\dot{q}_{min} = A\cdot \omega
+\label{eq:minjointvelocity}
+\end{equation}
+
+The mechanical system's introducing the delayed start comparing the waveform generation. So, the derivative of q(t) is considered as the desired velocity and it is added with the position PI's control variable (which is also a velocity). The result of this addition is commanded as the velocity set-point for the velocity PI controller. This technique helps reducing the delayed start in the mechanical systems where the desired velocity at a particular set-point is caught-up. This method can be called as computed-torque like control~\cite{Chung2016} for the purpose of accurate trajectory tracking. The above generated wave corresponds to the joint positions and the derived velocities can be used to validate the model-based controller for all the manipulator joints.

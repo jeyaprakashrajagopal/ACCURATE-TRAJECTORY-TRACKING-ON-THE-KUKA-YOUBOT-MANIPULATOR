@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: MAS Thesis.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: acknowledgment.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: stateoftheart.aux
+A level-1 auxiliary file: concept.aux
+A level-1 auxiliary file: measurementandresults.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: bibliography.aux
+The style file: abbrv.bst
+A level-1 auxiliary file: appendix.aux
+Database file #1: bibtex.bib
+Warning--empty journal in muggler2013torque
+Warning--can't use both author and editor fields in Chung2016
+Warning--empty journal in sellers2001overview
+You've used 30 entries,
+            2118 wiz_defined-function locations,
+            679 strings with 9250 characters,
+and the built_in function-call counts, 10144 in all, are:
+= -- 966
+> -- 522
+< -- 8
++ -- 207
+- -- 176
+* -- 710
+:= -- 1706
+add.period$ -- 91
+call.type$ -- 30
+change.case$ -- 172
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 393
+empty$ -- 753
+format.name$ -- 176
+if$ -- 2115
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 33
+newline$ -- 153
+num.names$ -- 60
+pop$ -- 190
+preamble$ -- 1
+purify$ -- 148
+quote$ -- 0
+skip$ -- 289
+stack$ -- 0
+substring$ -- 529
+swap$ -- 93
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 110
+warning$ -- 3
+while$ -- 86
+width$ -- 32
+write$ -- 321
+(There were 3 warnings)

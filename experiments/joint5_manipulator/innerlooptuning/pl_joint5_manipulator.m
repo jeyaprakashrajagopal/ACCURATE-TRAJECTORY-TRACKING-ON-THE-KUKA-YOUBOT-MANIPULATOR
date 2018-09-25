@@ -1,0 +1,40 @@
+%graphics_toolkit ("gnuplot");
+
+figure;
+
+data = dlmread("manipulator_joint5_innerloop_0pt5rads.txt", ",");
+
+setPoint = 1.5;
+%t = 1:500
+t1 = 500;
+s = size(data(1:t1, 1));
+
+hold all;
+% Add a horizontal line for the Temperature at steady state
+line('XData', [data(s(1, 1), 2) 0], 'YData', [setPoint setPoint], 'LineStyle', '-', ...
+    'LineWidth', 2, 'Color','m');
+    
+t = title('Joint 5 empirical tuning');
+set(t, 'FontSize', 24);
+
+xl = xlabel ('time(seconds)');
+set(xl, 'FontSize', 20);
+yl = ylabel ('Velocity (rad/s)');
+set(yl, 'FontSize', 20);
+
+
+windowSize = 10; 
+b = (1/windowSize)*ones(1,windowSize);
+a = 1;
+
+onedfilter = filter(b, a, data(1:t1,1));
+plot(data(1:t1, 2), data(1:t1,1));
+
+plot(data(1:t1, 2), onedfilter);
+legend('Setpoint', 'Measured values', 'Smoothed', 'Location', 'South');
+
+set(findall(gca, 'Type', 'Line'),'LineWidth',5);
+
+set(findall(gca, 'Type', 'Line'),'LineWidth',5);
+
+print -dpng joint5_innerloop_0pt5rads.png;

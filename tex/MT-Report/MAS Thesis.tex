@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                      THESIS MAIN FILE                           %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% document definition
+\documentclass[a4paper,11pt,chap,twoside]{thesis}
+
+% also include the second line below.
+\usepackage[hang]{caption2}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{float}
+
+% to indent subsequent lines of captions
+\renewcommand{\captionfont}{\bfseries}
+
+% create the following file in the input from the template
+\input{ThesisInformation}
+\input{Preamble}
+
+\begin{document}
+\tikzstyle{block} = [draw, fill=white, rectangle, 
+    minimum height=3em, minimum width=6em]
+\tikzstyle{sum} = [draw, fill=white, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thick,black}]
+\tdplotsetmaincoords{70}{20}
+
+\input{titlepage}
+
+% the main contents %
+\include{introduction}
+\emptypage
+\include{stateoftheart}
+\emptypage
+\include{concept}
+\emptypage
+\include{measurementandresults}
+\emptypage
+\include{conclusion}
+\emptypage
+
+% bibliography and appendixes
+\include{bibliography}
+\emptypage
+\include{appendix}
+\emptypage
+\emptypage
+
+\end{document}

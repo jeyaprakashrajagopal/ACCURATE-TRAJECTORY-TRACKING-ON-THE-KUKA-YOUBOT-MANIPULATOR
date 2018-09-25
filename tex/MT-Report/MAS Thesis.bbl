@@ -1,0 +1,180 @@
+\begin{thebibliography}{10}
+
+\bibitem{geometicsemanticspart1}
+T.~D. aet, S.~Bellens, R.~Smits, E.~Aertbelien, H.~Bruyninckx, and J.~D.
+  Schutter.
+\newblock Geometric relations between rigid bodies (part 1): Semantics for
+  standardization.
+\newblock {\em IEEE Robotics Automation Magazine}, 20(1):84--93, March 2013.
+
+\bibitem{34773}
+C.~H. An, C.~G. Atkeson, J.~D. Griffiths, and J.~M. Hollerbach.
+\newblock Experimental evaluation of feedforward and computed torque control.
+\newblock {\em IEEE Transactions on Robotics and Automation}, 5(3):368--373,
+  Jun 1989.
+
+\bibitem{Atkeson}
+C.~H. An, C.~G. Atkeson, and J.~M. Hollerbach.
+\newblock Estimation of inertial parameters of rigid body links of
+  manipulators.
+\newblock In {\em 1985 24th IEEE Conference on Decision and Control}, pages
+  990--995, Dec 1985.
+
+\bibitem{muggler2013torque}
+K.~Benjamin, M.~Elias, M.~F{\"a}ssler, D.~Scaramuzza, S.~Huck, and J.~Lygeros.
+\newblock Torque control of a kuka youbot arm.
+\newblock 2013.
+
+\bibitem{friction}
+B.~Bona and M.~Indri.
+\newblock Friction compensation in robotics: an overview.
+\newblock In {\em Proceedings of the 44th IEEE Conference on Decision and
+  Control}, pages 4360--4367, Dec 2005.
+
+\bibitem{boyd2004convex}
+S.~Boyd and L.~Vandenberghe.
+\newblock {\em Convex optimization}.
+\newblock Cambridge university press, 2004.
+
+\bibitem{Chung2016}
+W.~K. Chung, L.-C. Fu, and T.~Kr{\"o}ger.
+\newblock {\em Motion Control}, pages 163--194.
+\newblock Springer International Publishing, Cham, 2016.
+
+\bibitem{craig2005introduction}
+J.~J. Craig.
+\newblock {\em Introduction to robotics: mechanics and control}, volume~3.
+\newblock Pearson/Prentice Hall Upper Saddle River, NJ, USA:, 2005.
+
+\bibitem{de2012theory}
+C.~C. de~Wit, B.~Siciliano, and G.~Bastin.
+\newblock {\em Theory of robot control}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem{torquecontrol}
+A.~Del~Prete, N.~Mansard, O.~E. Ramos, O.~Stasse, and F.~Nori.
+\newblock Implementing torque control with high-ratio gear boxes and without
+  joint-torque sensors.
+\newblock {\em International Journal of Humanoid Robotics}, 13(01):1550044,
+  2016.
+
+\bibitem{featherstone2014rigid}
+R.~Featherstone.
+\newblock {\em Rigid body dynamics algorithms}.
+\newblock Springer, 2014.
+
+\bibitem{youbotdriver}
+P.~Jan.
+\newblock youbot driver.
+\newblock {\em online at \url{https://github.com/youbot/youbot_driver}}, 2011.
+
+\bibitem{youbotdriver_architecture}
+P.~Jan.
+\newblock Youbot driver's architecture.
+\newblock {\em online at
+  \url{https://janpaulus.github.io/d8/d74/architecture__overview.html}}, 2011.
+
+\bibitem{geometicsemanticspart2}
+T.~D. Laet, S.~Bellens, H.~Bruyninckx, and J.~D. Schutter.
+\newblock Geometric relations between rigid bodies (part 2): From semantics to
+  software.
+\newblock {\em IEEE Robotics Automation Magazine}, 20(2):91--102, June 2013.
+
+\bibitem{cascadedcontrol}
+K.~H. Ng, C.~F. Yeong, E.~L.~M. Su, and A.~R. Husain.
+\newblock Implementation of cascade control for wheeled mobile robot straight
+  path navigation.
+\newblock In {\em 2012 4th International Conference on Intelligent and Advanced
+  Systems (ICIAS2012)}, volume~2, pages 503--506, June 2012.
+
+\bibitem{4586493}
+D.~Nguyen-Tuong, M.~Seeger, and J.~Peters.
+\newblock Computed torque control with nonparametric regression models.
+\newblock In {\em 2008 American Control Conference}, pages 212--217, June 2008.
+
+\bibitem{olsson1998friction}
+H.~Olsson, K.~J. {\AA}str{\"o}m, C.~C. De~Wit, M.~G{\"a}fvert, and
+  P.~Lischinsky.
+\newblock Friction models and friction compensation.
+\newblock {\em Eur. J. Control}, 4(3):176--195, 1998.
+
+\bibitem{trajectorytracking_nn}
+T.~Ozaki, T.~Suzuki, T.~Furuhashi, S.~Okuma, and Y.~Uchikawa.
+\newblock Trajectory control of robotic manipulators using neural networks.
+\newblock {\em IEEE Transactions on Industrial Electronics}, 38(3):195--202,
+  June 1991.
+
+\bibitem{RnD2Rajagopal}
+J.~Rajagopal.
+\newblock Dynamic robot model parameter identification via domain specific
+  optimization.
+\newblock WS17 HBRS - Pl{\"o}ger, Schneider Supervising, Dec 2017.
+
+\bibitem{corberan2012haptic}
+M.~C. Ruiz.
+\newblock {\em Haptic Teleoperation of the youBot with friction compensation
+  for the base}.
+\newblock PhD thesis, MA thesis. Departamento de Ingenier{\'\i}a de Sistema y
+  Autom{\'a}tica, Universidad Carlos III de Madrid, 2012. URL: http://hdl.
+  handle. net/10016/16267 (cit. on p. 168), 2012.
+
+\bibitem{sellers2001overview}
+D.~Sellers.
+\newblock An overview of proportional plus integral plus derivative control and
+  suggestions for its successful application and implementation.
+\newblock 2001.
+
+\bibitem{sherman2011simbody}
+M.~A. Sherman, A.~Seth, and S.~L. Delp.
+\newblock Simbody: multibody dynamics for biomedical research.
+\newblock {\em Procedia Iutam, Online at
+  \url{https://simtk.org/projects/simbody}}, 2:241--261, 2011.
+
+\bibitem{smits2011kdl}
+R.~Smits, H.~Bruyninckx, and E.~Aertbeli{\"e}n.
+\newblock Kdl: Kinematics and dynamics library.
+\newblock {\em Avaliable: http://www.orocos.org/kdl}, 2011.
+
+\bibitem{SweversJ1997Orea}
+J.~Swevers, C.~Ganseman, D.~Tukel, J.~DeSchutter, and H.~VanBrussel.
+\newblock Optimal robot excitation and identification.
+\newblock {\em IEEE Transactions on Automation Science and Engineering},
+  13(5):730--740, 1997.
+
+\bibitem{swevers}
+J.~Swevers, W.~Verdonck, and J.~D. Schutter.
+\newblock Dynamic model identification for industrial robots.
+\newblock {\em IEEE Control Systems}, 27(5):58--71, Oct 2007.
+
+\bibitem{temelp}
+S.~TEMEL, S.~YA{\u{G}}LI, and S.~G{\"O}REN.
+\newblock P, pd, pi, pid controllers.
+\newblock {\em Middle East Technical University, Electrical and Electronics
+  Engineering Department}, April 2013.
+
+\bibitem{traversaro2016multibody}
+S.~Traversaro and A.~Saccon.
+\newblock Multibody dynamics notation.
+\newblock {\em Technische Universiteit Eindhoven, Tech. Rep}, 2016.
+
+\bibitem{vantilt2015optimal}
+J.~Vantilt, E.~Aertbeli{\"e}n, F.~De~Groote, and J.~De~Schutter.
+\newblock Optimal excitation and identification of the dynamic model of robotic
+  systems with compliant actuators.
+\newblock In {\em Robotics and Automation (ICRA), 2015 IEEE International
+  Conference on}, pages 2117--2124. IEEE, 2015.
+
+\bibitem{kukamanipulator}
+youBot developers.
+\newblock Dynamic robot model.
+\newblock {\em online at
+  \url{http://www.youbot-store.com/developers/kuka-youbot-kinematics-dynamics-and-3d-model-81}},
+  Nov 2016.
+
+\bibitem{astrom1995pid}
+K.~J. Ǻstr{\"o}m and T.~H{\"a}gglund.
+\newblock Pid controllers: theory, design, and tuning.
+\newblock {\em Instrument Society of America, Research Triangle Park, NC}, 10,
+  1995.
+
+\end{thebibliography}

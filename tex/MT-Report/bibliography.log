@@ -1,0 +1,5634 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.4.6)  11 AUG 2018 17:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bibliography.tex
+(./bibliography.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+! Undefined control sequence.
+l.9 \specialhead
+                {\bibname}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 \specialhead{\bibname
+                         }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment singlespace undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \begin{singlespace}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \nocite{4586493}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \nocite{7041362}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \nocite{muggler2013torque}
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \nocite{RnD2Rajagopal}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \nocite{craig2005introduction}
+                                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \nocite{geometicsemanticspart1}
+                                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \nocite{geometicsemanticspart2}
+                                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \nocite{smits2011kdl}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \nocite{kukamanipulator}
+                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \nocite{temelp}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \nocite{sherman2011simbody}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \nocite{torquecontrol}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \nocite{Chung2016}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \nocite{Atkeson}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \nocite{swevers}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \nocite{cascadedcontrol}
+                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \nocite{featherstone2014rigid}
+                                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \nocite{corberan2012haptic}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \nocite{youbotdriver_architecture}
+                                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \nocite{youbotdriver}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \nocite{SweversJ1997Orea}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \nocite{vantilt2015optimal}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Cannot be used in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \nocite{trajectorytracking_nn}
+                                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\bibdata{bibtex}
+(./bibliography.bbl
+
+! LaTeX Error: Environment thebibliography undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}
+                           {10}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}{1
+                             0}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \bibitem{geometicsemanticspart1}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.3 \bibitem{geometicsemanticspart1}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.3 \bibitem{geometicsemanticspart1}
+                                    
+I'm forgetting what you said and using zero instead.
+
+\bibcite{geometicsemanticspart1}{0}
+Missing character: There is no T in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.6 \newblock
+              Geometric relations between rigid bodies (part 1): Semantics for
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.8 \newblock
+              {\em IEEE Robotics Automation Magazine}, 20(1):84--93, March 2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (36.17195pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 Robotics
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 Au-
+ []
+
+
+Overfull \hbox (25.29984pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 toma-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (22.2554pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 Mag-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (17.37767pt too wide) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 zine
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \bibitem{7041362}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.10 \bibitem{7041362}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.10 \bibitem{7041362}
+                      
+I'm forgetting what you said and using zero instead.
+
+\bibcite{7041362}{0}
+Missing character: There is no N in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.12 \newblock
+               Computed torque control with variable gains through gaussian ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.14 \newblock
+               In {\em 2014 IEEE-RAS International Conference on Humanoid Ro...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 2014
+ []
+
+
+Overfull \hbox (27.78316pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 IEEE-
+ []
+
+
+Overfull \hbox (20.34988pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 RAS
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 na-
+ []
+
+
+Overfull \hbox (24.78874pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 tional
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (15.46098pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 fer-
+ []
+
+
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 ence
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (16.37767pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 Hu-
+ []
+
+
+Overfull \hbox (32.19983pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 manoid
+ []
+
+
+Overfull \hbox (28.50534pt too wide) in paragraph at lines 11--16
+\OT1/cmr/m/it/10 Robots
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \bibitem{Atkeson}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.17 \bibitem{Atkeson}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.17 \bibitem{Atkeson}
+                      
+I'm forgetting what you said and using zero instead.
+
+\bibcite{Atkeson}{0}
+Missing character: There is no C in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.19 \newblock
+               Estimation of inertial parameters of rigid body links of
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.21 \newblock
+               In {\em 1985 24th IEEE Conference on Decision and Control}, p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 1985
+ []
+
+
+Overfull \hbox (18.65544pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 24th
+ []
+
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (15.46098pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 fer-
+ []
+
+
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 ence
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 De-
+ []
+
+
+Overfull \hbox (11.24435pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 ci-
+ []
+
+
+Overfull \hbox (17.8888pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 sion
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (14.69432pt too wide) in paragraph at lines 18--23
+\OT1/cmr/m/it/10 trol
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \bibitem{muggler2013torque}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.24 \bibitem{muggler2013torque}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.24 \bibitem{muggler2013torque}
+                                
+I'm forgetting what you said and using zero instead.
+
+\bibcite{muggler2013torque}{0}
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no F in font nullfont!
+LaTeX Font Info:    Try loading font information for +cmr on input line 25.
+LaTeX Font Info:    No file cmr.fd. on input line 25.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 25.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.25 K.~Benjamin, M.~Elias, M.~F{\"a
+                                    }ssler, D.~Scaramuzza, S.~Huck, and J.~L...
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 25.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.26 \newblock
+               Torque control of a kuka youbot arm.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.27 \newblock
+               2013.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 25--28
+\/cmr/m/n/10 ^^?a
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \bibitem{Chung2016}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.29 \bibitem{Chung2016}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.29 \bibitem{Chung2016}
+                        
+I'm forgetting what you said and using zero instead.
+
+\bibcite{Chung2016}{0}
+Missing character: There is no W in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.31 \newblock
+               {\em Motion Control}, pages 163--194.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.32 \newblock
+               Springer International Publishing, Cham, 2016.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 30--33
+\/cmr/m/n/10 ^^?o
+ []
+
+
+Overfull \hbox (17.65544pt too wide) in paragraph at lines 30--33
+\OT1/cmr/m/it/10 Mo-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 30--33
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 30--33
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (14.69432pt too wide) in paragraph at lines 30--33
+\OT1/cmr/m/it/10 trol
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \bibitem{craig2005introduction}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.34 \bibitem{craig2005introduction}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.34 \bibitem{craig2005introduction}
+                                    
+I'm forgetting what you said and using zero instead.
+
+\bibcite{craig2005introduction}{0}
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.36 \newblock
+               {\em Introduction to robotics: mechanics and control}, volume~3.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.37 \newblock
+               Pearson/Prentice Hall Upper Saddle River, NJ, USA:, 2005.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 tro-
+ []
+
+
+Overfull \hbox (18.65543pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 duc-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (8.43327pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 to
+ []
+
+
+Overfull \hbox (36.16083pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 robotics:
+ []
+
+
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 me-
+ []
+
+
+Overfull \hbox (24.02206pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 chan-
+ []
+
+
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 ics
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (18.39986pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 con-
+ []
+
+
+Overfull \hbox (14.69432pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/it/10 trol
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \bibitem{torquecontrol}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.39 \bibitem{torquecontrol}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.39 \bibitem{torquecontrol}
+                            
+I'm forgetting what you said and using zero instead.
+
+\bibcite{torquecontrol}{0}
+Missing character: There is no A in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.41 \newblock
+               Implementing torque control with high-ratio gear boxes and wi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.43 \newblock
+               {\em International Journal of Humanoid Robotics}, 13(01):1550...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 na-
+ []
+
+
+Overfull \hbox (24.78874pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 tional
+ []
+
+
+Overfull \hbox (23.52205pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 Jour-
+ []
+
+
+Overfull \hbox (13.28882pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 nal
+ []
+
+
+Overfull \hbox (8.17773pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 of
+ []
+
+
+Overfull \hbox (16.37767pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 Hu-
+ []
+
+
+Overfull \hbox (32.19983pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 manoid
+ []
+
+
+Overfull \hbox (36.17195pt too wide) in paragraph at lines 40--45
+\OT1/cmr/m/it/10 Robotics
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \bibitem{featherstone2014rigid}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.46 \bibitem{featherstone2014rigid}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.46 \bibitem{featherstone2014rigid}
+                                    
+I'm forgetting what you said and using zero instead.
+
+\bibcite{featherstone2014rigid}{0}
+Missing character: There is no R in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.48 \newblock
+               {\em Rigid body dynamics algorithms}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.49 \newblock
+               Springer, 2014.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (22.88318pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 Rigid
+ []
+
+
+Overfull \hbox (18.6554pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 body
+ []
+
+
+Overfull \hbox (13.54434pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 dy-
+ []
+
+
+Overfull \hbox (22.48875pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 nam-
+ []
+
+
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 ics
+ []
+
+
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 al-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 go-
+ []
+
+
+Overfull \hbox (27.98315pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/it/10 rithms
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \bibitem{youbotdriver}
+                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.51 \bibitem{youbotdriver}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.51 \bibitem{youbotdriver}
+                           
+I'm forgetting what you said and using zero instead.
+
+\bibcite{youbotdriver}{0}
+Missing character: There is no P in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.53 \newblock
+               youbot driver.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.54 \newblock
+               {\em online at \url{https://github.com/youbot/youbot_driver}}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 \newblock {\em online at \url
+                                  {https://github.com/youbot/youbot_driver}}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 ... at \url{https://github.com/youbot/youbot_
+                                                  driver}}, 2011.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 54.
+! Extra }, or forgotten $.
+l.54 ...l{https://github.com/youbot/youbot_driver}
+                                                  }, 2011.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.54 ...{https://github.com/youbot/youbot_driver}}
+                                                  , 2011.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.55 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 52--55
+\OT1/cmr/m/it/10 on-
+ []
+
+
+Overfull \hbox (15.84435pt too wide) in paragraph at lines 52--55
+\OT1/cmr/m/it/10 line
+ []
+
+
+Overfull \hbox (8.43327pt too wide) in paragraph at lines 52--55
+\OT1/cmr/m/it/10 at
+ []
+
+
+Overfull \hbox (200.9036pt too wide) in paragraph at lines 52--55
+\OT1/cmr/m/it/10 https://github.com/youbot/youbot$[]\OML/cmm/m/it/10 river; \/c
+mr/m/n/10 2011\OML/cmm/m/it/10 :$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \bibitem{youbotdriver_architecture}
+                                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.56 \bibitem{youbotdriver_architecture}
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.56 \bibitem{youbotdriver_architecture}
+                                        
+I'm forgetting what you said and using zero instead.
+
+\bibcite{youbotdriver_architecture}{0}
+! Undefined control sequence.
+l.58 \newblock
+               Youbot driver's architecture.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.59 \newblock
+               {\em online at
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.60   \url
+           {https://janpaulus.github.io/d8/d74/architecture__overview.html}}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.60 ...//janpaulus.github.io/d8/d74/architecture_
+                                                  _overview.html}}, 2011.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.60 .../janpaulus.github.io/d8/d74/architecture__
+                                                  overview.html}}, 2011.
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Extra }, or forgotten $.
+l.60 ...ub.io/d8/d74/architecture__overview.html}}
+                                                  , 2011.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.61 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.72209pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 P. J.
+ []
+
+
+Overfull \hbox (29.66646pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 Youbot
+ []
+
+
+Overfull \hbox (32.96643pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 driver's
+ []
+
+
+Overfull \hbox (12.90546pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 ar-
+ []
+
+
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 chi-
+ []
+
+
+Overfull \hbox (15.58873pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 tec-
+ []
+
+
+Overfull \hbox (20.06094pt too wide) in paragraph at lines 57--61
+\OT1/cmr/m/it/10 ture.
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 57--61
+\/cmr/m/n/10 on-
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 57--61
+\/cmr/m/n/10 line
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 57--61
+\/cmr/m/n/10 at
+ []
+
+
+Overfull \hbox (292.13475pt too wide) in paragraph at lines 57--61
+\/cmr/m/n/10 https://janpaulus.github.io/d8/d74/architecture$[]\OML/cmm/m/it/10
+ ; \/cmr/m/n/10 2011\OML/cmm/m/it/10 :$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \bibitem{geometicsemanticspart2}
+                                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.62 \bibitem{geometicsemanticspart2}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.62 \bibitem{geometicsemanticspart2}
+                                     
+I'm forgetting what you said and using zero instead.
+
+\bibcite{geometicsemanticspart2}{0}
+! Undefined control sequence.
+l.64 \newblock
+               Geometric relations between rigid bodies (part 2): From seman...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.66 \newblock
+               {\em IEEE Robotics Automation Magazine}, 20(2):91--102, June ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.63892pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 T. D.
+ []
+
+
+Overfull \hbox (22.36116pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 Laet,
+ []
+
+
+Overfull \hbox (28.19449pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 S. Bel-
+ []
+
+
+Overfull \hbox (19.50003pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 lens,
+ []
+
+
+Overfull \hbox (43.22232pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 H. Bruyn-
+ []
+
+
+Overfull \hbox (25.8334pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 inckx,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (20.55559pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 J. D.
+ []
+
+
+Overfull \hbox (27.77782pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 Schut-
+ []
+
+
+Overfull \hbox (15.0278pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 ter.
+ []
+
+
+Overfull \hbox (15.625pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 Ge-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 o-
+ []
+
+
+Overfull \hbox (20.00003pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 met-
+ []
+
+
+Overfull \hbox (11.1389pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 ric
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 la-
+ []
+
+
+Overfull \hbox (21.16672pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 tions
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 tween
+ []
+
+
+Overfull \hbox (20.02783pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 rigid
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 bod-
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 ies
+ []
+
+
+Overfull \hbox (22.25006pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 (part
+ []
+
+
+Overfull \hbox (11.6667pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 2):
+ []
+
+
+Overfull \hbox (22.9445pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 From
+ []
+
+
+Overfull \hbox (11.72221pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 se-
+ []
+
+
+Overfull \hbox (22.22227pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 man-
+ []
+
+
+Overfull \hbox (15.05557pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 tics
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (19.22226pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 soft-
+ []
+
+
+Overfull \hbox (23.08336pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 ware.
+ []
+
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (36.17195pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 Robotics
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 Au-
+ []
+
+
+Overfull \hbox (25.29984pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 toma-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (22.2554pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 Mag-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (20.15546pt too wide) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 zine\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (40.55568pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 20(2):91--
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 102,
+ []
+
+
+Overfull \hbox (20.69449pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 June
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 63--67
+\/cmr/m/n/10 2013. 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \bibitem{cascadedcontrol}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.68 \bibitem{cascadedcontrol}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.68 \bibitem{cascadedcontrol}
+                              
+I'm forgetting what you said and using zero instead.
+
+\bibcite{cascadedcontrol}{0}
+! Undefined control sequence.
+l.70 \newblock
+               Implementation of cascade control for wheeled mobile robot st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 \newblock
+               In {\em 2012 4th International Conference on Intelligent and ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (23.0556pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 K. H.
+ []
+
+
+Overfull \hbox (15.27782pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 Ng,
+ []
+
+
+Overfull \hbox (21.52782pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 C. F.
+ []
+
+
+Overfull \hbox (29.4445pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 Yeong,
+ []
+
+
+Overfull \hbox (35.00006pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 E. L. M.
+ []
+
+
+Overfull \hbox (13.88893pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 Su,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (22.63892pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 A. R.
+ []
+
+
+Overfull \hbox (16.38892pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 Hu-
+ []
+
+
+Overfull \hbox (20.0556pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 sain.
+ []
+
+
+Overfull \hbox (15.2778pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 Im-
+ []
+
+
+Overfull \hbox (16.11113pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 ple-
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 men-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (16.72223pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 cas-
+ []
+
+
+Overfull \hbox (19.44447pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 cade
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.58337pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 trol
+ []
+
+
+Overfull \hbox (11.97226pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 for
+ []
+
+
+Overfull \hbox (34.44449pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 wheeled
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 mo-
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 bile
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 robot
+ []
+
+
+Overfull \hbox (33.69452pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 straight
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 path
+ []
+
+
+Overfull \hbox (18.88893pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 nav-
+ []
+
+
+Overfull \hbox (6.11111pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 ga-
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 tion.
+ []
+
+
+Overfull \hbox (9.16669pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 In
+ []
+
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 2012
+ []
+
+
+Overfull \hbox (13.54436pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 4th
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 na-
+ []
+
+
+Overfull \hbox (24.78874pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 tional
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (15.46098pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 fer-
+ []
+
+
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 ence
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (14.05544pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 tel-
+ []
+
+
+Overfull \hbox (9.19994pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 li-
+ []
+
+
+Overfull \hbox (18.1443pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 gent
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (15.611pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 Ad-
+ []
+
+
+Overfull \hbox (28.622pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 vanced
+ []
+
+
+Overfull \hbox (18.14432pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 Sys-
+ []
+
+
+Overfull \hbox (20.18875pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 tems
+ []
+
+
+Overfull \hbox (59.3219pt too wide) in paragraph at lines 69--74
+\OT1/cmr/m/it/10 (ICIAS2012)\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 vol-
+ []
+
+
+Overfull \hbox (28.33339pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 ume 2,
+ []
+
+
+Overfull \hbox (23.94449pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 pages
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 503--
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 506,
+ []
+
+
+Overfull \hbox (20.69449pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 June
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 69--74
+\/cmr/m/n/10 2012. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \bibitem{4586493}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.75 \bibitem{4586493}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.75 \bibitem{4586493}
+                      
+I'm forgetting what you said and using zero instead.
+
+\bibcite{4586493}{0}
+! Undefined control sequence.
+l.77 \newblock
+               Computed torque control with nonparametric regression models.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.78 \newblock
+               In {\em 2008 American Control Conference}, pages 212--217, Ju...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (49.02786pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 D. Nguyen-
+ []
+
+
+Overfull \hbox (30.27785pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 Tuong,
+ []
+
+
+Overfull \hbox (44.75006pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 M. Seeger,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (24.44446pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 J. Pe-
+ []
+
+
+Overfull \hbox (18.97224pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 ters.
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 Com-
+ []
+
+
+Overfull \hbox (25.00006pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 puted
+ []
+
+
+Overfull \hbox (28.08339pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 torque
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.58337pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 trol
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 with
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 non-
+ []
+
+
+Overfull \hbox (22.8056pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 para-
+ []
+
+
+Overfull \hbox (20.00003pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 met-
+ []
+
+
+Overfull \hbox (11.1389pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 ric
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (20.6389pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 gres-
+ []
+
+
+Overfull \hbox (17.27782pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 sion
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 mod-
+ []
+
+
+Overfull \hbox (13.94446pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 els.
+ []
+
+
+Overfull \hbox (9.16669pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 In
+ []
+
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 2008
+ []
+
+
+Overfull \hbox (27.74979pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 Amer-
+ []
+
+
+Overfull \hbox (6.6444pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 i-
+ []
+
+
+Overfull \hbox (14.82211pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 can
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (14.69432pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 trol
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (15.46098pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 fer-
+ []
+
+
+Overfull \hbox (21.68874pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/it/10 ence\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (23.94449pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 pages
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 212--
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 217,
+ []
+
+
+Overfull \hbox (20.69449pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 June
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 76--79
+\/cmr/m/n/10 2008. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 \bibitem{trajectorytracking_nn}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.80 \bibitem{trajectorytracking_nn}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.80 \bibitem{trajectorytracking_nn}
+                                    
+I'm forgetting what you said and using zero instead.
+
+\bibcite{trajectorytracking_nn}{0}
+! Undefined control sequence.
+l.82 \newblock
+               Trajectory control of robotic manipulators using neural netwo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83 \newblock
+               {\em IEEE Transactions on Industrial Electronics}, 38(3):195-...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (40.27786pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 T. Ozaki,
+ []
+
+
+Overfull \hbox (44.16676pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 T. Suzuki,
+ []
+
+
+Overfull \hbox (26.80559pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 T. Fu-
+ []
+
+
+Overfull \hbox (35.08342pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 ruhashi,
+ []
+
+
+Overfull \hbox (45.27791pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 S. Okuma,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (56.66676pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 Y. Uchikawa.
+ []
+
+
+Overfull \hbox (18.6389pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 Tra-
+ []
+
+
+Overfull \hbox (15.27779pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 jec-
+ []
+
+
+Overfull \hbox (18.08339pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 tory
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.58337pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 trol
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (30.86119pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 robotic
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (17.22226pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 nip-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 u-
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 la-
+ []
+
+
+Overfull \hbox (16.75003pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 tors
+ []
+
+
+Overfull \hbox (12.83334pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 us-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (18.88892pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 neu-
+ []
+
+
+Overfull \hbox (11.69447pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 ral
+ []
+
+
+Overfull \hbox (17.22224pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 net-
+ []
+
+
+Overfull \hbox (27.86116pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 works.
+ []
+
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (28.49423pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 Trans-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 ac-
+ []
+
+
+Overfull \hbox (21.21098pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 tions
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (18.14433pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 dus-
+ []
+
+
+Overfull \hbox (18.2721pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 trial
+ []
+
+
+Overfull \hbox (21.60538pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 Elec-
+ []
+
+
+Overfull \hbox (21.33871pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 tron-
+ []
+
+
+Overfull \hbox (14.53326pt too wide) in paragraph at lines 81--85
+\OT1/cmr/m/it/10 ics\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (45.5557pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 38(3):195--
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 202,
+ []
+
+
+Overfull \hbox (20.69449pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 June
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 81--85
+\/cmr/m/n/10 1991. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \bibitem{RnD2Rajagopal}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.86 \bibitem{RnD2Rajagopal}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.86 \bibitem{RnD2Rajagopal}
+                            
+I'm forgetting what you said and using zero instead.
+
+\bibcite{RnD2Rajagopal}{0}
+! Undefined control sequence.
+l.88 \newblock
+               Dynamic robot model parameter identification via domain specific
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 \newblock
+               WS17 HBRS - Pl{\"o}ger, Schneider Supervising, Dec 2017.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (25.83336pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 J. Ra-
+ []
+
+
+Overfull \hbox (34.16678pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 jagopal.
+ []
+
+
+Overfull \hbox (16.25003pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 Dy-
+ []
+
+
+Overfull \hbox (26.11118pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 namic
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 robot
+ []
+
+
+Overfull \hbox (26.38896pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 model
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 pa-
+ []
+
+
+Overfull \hbox (20.58337pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 ram-
+ []
+
+
+Overfull \hbox (7.77777pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 e-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 ter
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 iden-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (13.0556pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 via
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 do-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 main
+ []
+
+
+Overfull \hbox (17.55557pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 spe-
+ []
+
+
+Overfull \hbox (17.22224pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 cific
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 op-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 miza-
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 tion.
+ []
+
+
+Overfull \hbox (25.8334pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 WS17
+ []
+
+
+Overfull \hbox (27.50006pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 HBRS
+ []
+
+
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (30.72229pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 Pl^^?oger,
+ []
+
+
+Overfull \hbox (31.38893pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 Schnei-
+ []
+
+
+Overfull \hbox (13.91669pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 der
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 Su-
+ []
+
+
+Overfull \hbox (17.5278pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 per-
+ []
+
+
+Overfull \hbox (15.33336pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 vis-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 ing,
+ []
+
+
+Overfull \hbox (16.52779pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 Dec
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 87--91
+\/cmr/m/n/10 2017. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \bibitem{corberan2012haptic}
+                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.92 \bibitem{corberan2012haptic}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.92 \bibitem{corberan2012haptic}
+                                 
+I'm forgetting what you said and using zero instead.
+
+\bibcite{corberan2012haptic}{0}
+! Undefined control sequence.
+l.94 \newblock
+               {\em Haptic Teleoperation of the youBot with friction compens...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.96 \newblock
+               PhD thesis, MA thesis. Departamento de Ingenier{\'\i}a de Sis...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (24.1667pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 M. C.
+ []
+
+
+Overfull \hbox (22.9167pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 Ruiz.
+ []
+
+
+Overfull \hbox (21.2332pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 Hap-
+ []
+
+
+Overfull \hbox (10.9888pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 tic
+ []
+
+
+Overfull \hbox (21.72205pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 Tele-
+ []
+
+
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 op-
+ []
+
+
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 er-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (8.17773pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 of
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (30.80536pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 youBot
+ []
+
+
+Overfull \hbox (18.14433pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 with
+ []
+
+
+Overfull \hbox (18.52763pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 fric-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 com-
+ []
+
+
+Overfull \hbox (18.39986pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 pen-
+ []
+
+
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 sa-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (12.39436pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 for
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (20.66653pt too wide) in paragraph at lines 93--99
+\OT1/cmr/m/it/10 base\/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (20.00005pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 PhD
+ []
+
+
+Overfull \hbox (17.22224pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 the-
+ []
+
+
+Overfull \hbox (13.44446pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 sis,
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 MA
+ []
+
+
+Overfull \hbox (17.22224pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 the-
+ []
+
+
+Overfull \hbox (13.44446pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 sis.
+ []
+
+
+Overfull \hbox (15.41667pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 De-
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 par-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (26.9445pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 mento
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (12.50002pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 In-
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 ge-
+ []
+
+
+Overfull \hbox (24.47227pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 nier^^S^^Pa
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (15.61113pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 Sis-
+ []
+
+
+Overfull \hbox (21.66672pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 tema
+ []
+
+
+Overfull \hbox (5.2778pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 y
+ []
+
+
+Overfull \hbox (16.38892pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 Au-
+ []
+
+
+Overfull \hbox (41.11122pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 tom^^Satica,
+ []
+
+
+Overfull \hbox (19.1667pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 Uni-
+ []
+
+
+Overfull \hbox (16.69446pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 ver-
+ []
+
+
+Overfull \hbox (10.05556pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 si-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 dad
+ []
+
+
+Overfull \hbox (19.47224pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 Car-
+ []
+
+
+Overfull \hbox (11.72224pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 los
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 III
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (34.75009pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 Madrid,
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 2012.
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 URL:
+ []
+
+
+Overfull \hbox (48.0557pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 http://hdl.
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 han-
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 dle.
+ []
+
+
+Overfull \hbox (73.8891pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 net/10016/16267
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 (cit.
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 on
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 p.
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 168),
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 93--99
+\/cmr/m/n/10 2012. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \bibitem{sherman2011simbody}
+                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.100 \bibitem{sherman2011simbody}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.100 \bibitem{sherman2011simbody}
+                                  
+I'm forgetting what you said and using zero instead.
+
+\bibcite{sherman2011simbody}{0}
+! Undefined control sequence.
+l.102 \newblock
+                Simbody: multibody dynamics for biomedical research.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.103 \newblock
+                {\em Procedia Iutam, Online at
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.104   \url
+            {https://simtk.org/projects/simbody}}, 2:241--261, 2011.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (24.44449pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 M. A.
+ []
+
+
+Overfull \hbox (22.80559pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 Sher-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 man,
+ []
+
+
+Overfull \hbox (34.72229pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 A. Seth,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (19.58337pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 S. L.
+ []
+
+
+Overfull \hbox (23.19449pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 Delp.
+ []
+
+
+Overfull \hbox (20.00005pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 Sim-
+ []
+
+
+Overfull \hbox (24.72232pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 body:
+ []
+
+
+Overfull \hbox (26.38895pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 multi-
+ []
+
+
+Overfull \hbox (21.94453pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 body
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 dy-
+ []
+
+
+Overfull \hbox (22.22227pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 nam-
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 ics
+ []
+
+
+Overfull \hbox (11.97226pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 for
+ []
+
+
+Overfull \hbox (35.00008pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 biomed-
+ []
+
+
+Overfull \hbox (6.11111pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 cal
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (29.80559pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 search.
+ []
+
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 Pro-
+ []
+
+
+Overfull \hbox (12.26654pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 ce-
+ []
+
+
+Overfull \hbox (13.28882pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 dia
+ []
+
+
+Overfull \hbox (12.79991pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 Iu-
+ []
+
+
+Overfull \hbox (19.67766pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 tam,
+ []
+
+
+Overfull \hbox (16.86656pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 On-
+ []
+
+
+Overfull \hbox (15.84435pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 line
+ []
+
+
+Overfull \hbox (8.43327pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 at
+ []
+
+
+Overfull \hbox (154.06561pt too wide) in paragraph at lines 101--105
+\OT1/cmr/m/it/10 https://simtk.org/projects/simbody\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (27.77786pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 2:241--
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 261,
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 101--105
+\/cmr/m/n/10 2011. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 \bibitem{smits2011kdl}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.106 \bibitem{smits2011kdl}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.106 \bibitem{smits2011kdl}
+                            
+I'm forgetting what you said and using zero instead.
+
+\bibcite{smits2011kdl}{0}
+! Undefined control sequence.
+l.108 \newblock
+                Kdl: Kinematics and dynamics library.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.109 \newblock
+                {\em Avaliable: http://www.orocos.org/kdl}, 2011.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (39.63896pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 R. Smits,
+ []
+
+
+Overfull \hbox (43.22232pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 H. Bruyn-
+ []
+
+
+Overfull \hbox (25.8334pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 inckx,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (34.88893pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 E. Aert-
+ []
+
+
+Overfull \hbox (28.61118pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 beli^^?en.
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 Kdl:
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 Kine-
+ []
+
+
+Overfull \hbox (20.5556pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 mat-
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 ics
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 dy-
+ []
+
+
+Overfull \hbox (22.22227pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 nam-
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 ics
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 li-
+ []
+
+
+Overfull \hbox (25.61118pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 brary.
+ []
+
+
+Overfull \hbox (26.0887pt too wide) in paragraph at lines 107--110
+\OT1/cmr/m/it/10 Avali-
+ []
+
+
+Overfull \hbox (19.9332pt too wide) in paragraph at lines 107--110
+\OT1/cmr/m/it/10 able:
+ []
+
+
+Overfull \hbox (117.01035pt too wide) in paragraph at lines 107--110
+\OT1/cmr/m/it/10 http://www.orocos.org/kdl\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 107--110
+\/cmr/m/n/10 2011. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \bibitem{SweversJ1997Orea}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.111 \bibitem{SweversJ1997Orea}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.111 \bibitem{SweversJ1997Orea}
+                                
+I'm forgetting what you said and using zero instead.
+
+\bibcite{SweversJ1997Orea}{0}
+! Undefined control sequence.
+l.113 \newblock
+                Optimal robot excitation and identification.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.114 \newblock
+                {\em IEEE Transactions on Automation Science and Engineering},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (26.25003pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 J. Sw-
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ev-
+ []
+
+
+Overfull \hbox (15.08334pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ers,
+ []
+
+
+Overfull \hbox (42.34726pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 C. Ganse-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 man,
+ []
+
+
+Overfull \hbox (39.58339pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 D. Tukel,
+ []
+
+
+Overfull \hbox (25.55557pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 J. De-
+ []
+
+
+Overfull \hbox (27.77782pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 Schut-
+ []
+
+
+Overfull \hbox (15.0278pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ter,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (33.0556pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 H. Van-
+ []
+
+
+Overfull \hbox (23.83337pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 Brus-
+ []
+
+
+Overfull \hbox (13.94446pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 sel.
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 Op-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 mal
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 robot
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (10.55556pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ci-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 iden-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 tion.
+ []
+
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (28.49423pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 Trans-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 ac-
+ []
+
+
+Overfull \hbox (21.21098pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 tions
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 Au-
+ []
+
+
+Overfull \hbox (25.29984pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 toma-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 Sci-
+ []
+
+
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 ence
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (15.98323pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 En-
+ []
+
+
+Overfull \hbox (11.24435pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 gi-
+ []
+
+
+Overfull \hbox (22.10536pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 neer-
+ []
+
+
+Overfull \hbox (16.06659pt too wide) in paragraph at lines 112--116
+\OT1/cmr/m/it/10 ing\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (45.5557pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 13(5):730--
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 740,
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 112--116
+\/cmr/m/n/10 1997. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \bibitem{swevers}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.117 \bibitem{swevers}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.117 \bibitem{swevers}
+                       
+I'm forgetting what you said and using zero instead.
+
+\bibcite{swevers}{0}
+! Undefined control sequence.
+l.119 \newblock
+                Dynamic model identification for industrial robots.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.120 \newblock
+                {\em IEEE Control Systems}, 27(5):58--71, Oct 2007.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (26.25003pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 J. Sw-
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 ev-
+ []
+
+
+Overfull \hbox (15.08334pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 ers,
+ []
+
+
+Overfull \hbox (33.63892pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 W. Ver-
+ []
+
+
+Overfull \hbox (28.3334pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 donck,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (20.55559pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 J. D.
+ []
+
+
+Overfull \hbox (27.77782pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 Schut-
+ []
+
+
+Overfull \hbox (15.0278pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 ter.
+ []
+
+
+Overfull \hbox (16.25003pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 Dy-
+ []
+
+
+Overfull \hbox (26.11118pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 namic
+ []
+
+
+Overfull \hbox (26.38896pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 model
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 iden-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (11.97226pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 for
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (18.38892pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 dus-
+ []
+
+
+Overfull \hbox (18.36116pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 trial
+ []
+
+
+Overfull \hbox (30.36119pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 robots.
+ []
+
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 118--121
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 118--121
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (14.69432pt too wide) in paragraph at lines 118--121
+\OT1/cmr/m/it/10 trol
+ []
+
+
+Overfull \hbox (18.14432pt too wide) in paragraph at lines 118--121
+\OT1/cmr/m/it/10 Sys-
+ []
+
+
+Overfull \hbox (22.96654pt too wide) in paragraph at lines 118--121
+\OT1/cmr/m/it/10 tems\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (40.55568pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 27(5):58--
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 71,
+ []
+
+
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 Oct
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 118--121
+\/cmr/m/n/10 2007. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 \bibitem{temelp}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.122 \bibitem{temelp}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.122 \bibitem{temelp}
+                      
+I'm forgetting what you said and using zero instead.
+
+\bibcite{temelp}{0}
+! Undefined control sequence.
+l.124 \newblock
+                P, pd, pi, pid controllers.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.125 \newblock
+                {\em Middle East Technical University, Electrical and Electr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (49.58344pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 S. TEMEL,
+ []
+
+
+Overfull \hbox (45.2084pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 S. YA[]GLI,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (50.62509pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 S. G[]OREN.
+ []
+
+
+Overfull \hbox (8.75002pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 P,
+ []
+
+
+Overfull \hbox (14.16672pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 pd,
+ []
+
+
+Overfull \hbox (11.11115pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 pi,
+ []
+
+
+Overfull \hbox (13.88893pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 pid
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (33.4445pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 trollers.
+ []
+
+
+Overfull \hbox (20.72209pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 Mid-
+ []
+
+
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 dle
+ []
+
+
+Overfull \hbox (19.30544pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 East
+ []
+
+
+Overfull \hbox (23.76646pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 Tech-
+ []
+
+
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 ni-
+ []
+
+
+Overfull \hbox (11.75546pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 cal
+ []
+
+
+Overfull \hbox (19.69987pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 Uni-
+ []
+
+
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 ver-
+ []
+
+
+Overfull \hbox (18.39987pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 sity,
+ []
+
+
+Overfull \hbox (21.60538pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 Elec-
+ []
+
+
+Overfull \hbox (14.18321pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 tri-
+ []
+
+
+Overfull \hbox (11.75546pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 cal
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (21.60538pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 Elec-
+ []
+
+
+Overfull \hbox (21.33871pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 tron-
+ []
+
+
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 ics
+ []
+
+
+Overfull \hbox (15.98323pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 En-
+ []
+
+
+Overfull \hbox (11.24435pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 gi-
+ []
+
+
+Overfull \hbox (22.10536pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 neer-
+ []
+
+
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 ing
+ []
+
+
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 De-
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 part-
+ []
+
+
+Overfull \hbox (24.49986pt too wide) in paragraph at lines 123--127
+\OT1/cmr/m/it/10 ment\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.52783pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 April
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 123--127
+\/cmr/m/n/10 2013. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \bibitem{vantilt2015optimal}
+                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.128 \bibitem{vantilt2015optimal}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.128 \bibitem{vantilt2015optimal}
+                                  
+I'm forgetting what you said and using zero instead.
+
+\bibcite{vantilt2015optimal}{0}
+! Undefined control sequence.
+l.130 \newblock
+                Optimal excitation and identification of the dynamic model o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.132 \newblock
+                In {\em Robotics and Automation (ICRA), 2015 IEEE International
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (30.69449pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 J. Van-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 tilt,
+ []
+
+
+Overfull \hbox (34.88893pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 E. Aert-
+ []
+
+
+Overfull \hbox (28.61118pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 beli^^?en,
+ []
+
+
+Overfull \hbox (58.9862pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 F. De Groote,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (52.22227pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 J. De Schut-
+ []
+
+
+Overfull \hbox (15.0278pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ter.
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 Op-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 mal
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (10.55556pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ci-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 iden-
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 dy-
+ []
+
+
+Overfull \hbox (26.11118pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 namic
+ []
+
+
+Overfull \hbox (26.38896pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 model
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (30.86119pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 robotic
+ []
+
+
+Overfull \hbox (16.50002pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 sys-
+ []
+
+
+Overfull \hbox (20.61115pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 tems
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 with
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 com-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ant
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (12.7778pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 tu-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (19.52782pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 tors.
+ []
+
+
+Overfull \hbox (9.16669pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 In
+ []
+
+
+Overfull \hbox (36.17195pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 Robotics
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 Au-
+ []
+
+
+Overfull \hbox (25.29984pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 toma-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (36.98311pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 (ICRA),
+ []
+
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 2015
+ []
+
+
+Overfull \hbox (24.20541pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 IEEE
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 na-
+ []
+
+
+Overfull \hbox (24.78874pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 tional
+ []
+
+
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 Con-
+ []
+
+
+Overfull \hbox (15.46098pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 fer-
+ []
+
+
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 ence
+ []
+
+
+Overfull \hbox (13.51106pt too wide) in paragraph at lines 129--134
+\OT1/cmr/m/it/10 on\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (23.94449pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 pages
+ []
+
+
+Overfull \hbox (25.00008pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 2117--
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 2124.
+ []
+
+
+Overfull \hbox (26.80562pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 IEEE,
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 129--134
+\/cmr/m/n/10 2015. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \bibitem{kukamanipulator}
+                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.135 \bibitem{kukamanipulator}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.135 \bibitem{kukamanipulator}
+                               
+I'm forgetting what you said and using zero instead.
+
+\bibcite{kukamanipulator}{0}
+! Undefined control sequence.
+l.137 \newblock
+                Dynamic robot model.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.138 \newblock
+                {\em online at
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.139   \url
+            {http://www.youbot-store.com/developers/kuka-youbot-kinematics-d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (31.52788pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 youBot
+ []
+
+
+Overfull \hbox (13.33334pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 de-
+ []
+
+
+Overfull \hbox (15.55557pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 vel-
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 op-
+ []
+
+
+Overfull \hbox (15.08334pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 ers.
+ []
+
+
+Overfull \hbox (16.25003pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 Dy-
+ []
+
+
+Overfull \hbox (26.11118pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 namic
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 robot
+ []
+
+
+Overfull \hbox (29.16675pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 model.
+ []
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 on-
+ []
+
+
+Overfull \hbox (15.84435pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 line
+ []
+
+
+Overfull \hbox (8.43327pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 at
+ []
+
+
+Overfull \hbox (84.58833pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 http://www.youbot-
+ []
+
+
+Overfull \hbox (118.83247pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 store.com/developers/kuka-
+ []
+
+
+Overfull \hbox (31.43309pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 youbot-
+ []
+
+
+Overfull \hbox (49.833pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 kinematics-
+ []
+
+
+Overfull \hbox (44.21083pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 dynamics-
+ []
+
+
+Overfull \hbox (19.4221pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 and-
+ []
+
+
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 3d-
+ []
+
+
+Overfull \hbox (28.62202pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 model-
+ []
+
+
+Overfull \hbox (12.99995pt too wide) in paragraph at lines 136--141
+\OT1/cmr/m/it/10 81\/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (17.50005pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 Nov
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 136--141
+\/cmr/m/n/10 2016. 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{thebibliography}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 \end{thebibliography}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.142 \end{thebibliography}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.142 \end{thebibliography}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.142 \end{thebibliography}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.142 \end{thebibliography}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+
+! LaTeX Error: \begin{document} ended by \end{singlespace}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \end{singlespace}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> bibliography.tex
+                    
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 32 strings out of 493304
+ 417 string characters out of 6139872
+ 65880 words of memory out of 5000000
+ 3585 multiletter control sequences out of 15000+600000
+ 3986 words of font info for 15 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 20i,4n,16p,146b,181s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
